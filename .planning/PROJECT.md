@@ -35,6 +35,24 @@ Attendees leave understanding *how* to architect AI experiences — not just hav
 - Long-form video tutorials — this is live, hands-on
 - Pre-recorded content — everything is live coding
 
+## Workshop Structure
+
+**Part 1: Foundations (13:00-15:00, 2 hours)**
+- AI-native workflows with Gemini, AI Studio, and Antigravity
+- Crafting better prompts, structured outputs
+- "Vibe code" a small logic engine — setup ready for Part 2
+
+**Coffee Break (15:00-15:30)**
+
+**Part 2: Building with Firebase & AI (15:30-17:00, 1.5 hours)**
+- Choose your own path — pick a project type
+- Project options:
+  - Face-reactive experience (like Mood Organism)
+  - Gesture-controlled visuals (like ParticleZen)
+  - Camera-based game (like Karachi Run)
+- Iterate using natural language + Three.js or Canvas
+- Deploy to Firebase
+
 ## Context
 
 **The Speaker:**
