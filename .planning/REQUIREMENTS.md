@@ -86,34 +86,34 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | TBD | Pending |
-| FOUND-02 | TBD | Pending |
-| FOUND-03 | TBD | Pending |
-| FOUND-04 | TBD | Pending |
-| FOUND-05 | TBD | Pending |
-| FOUND-06 | TBD | Pending |
-| PATH-01 | TBD | Pending |
-| PATH-02 | TBD | Pending |
-| PATH-03 | TBD | Pending |
-| MAT-01 | TBD | Pending |
-| MAT-02 | TBD | Pending |
-| MAT-03 | TBD | Pending |
-| MAT-04 | TBD | Pending |
-| INFRA-01 | TBD | Pending |
-| INFRA-02 | TBD | Pending |
-| DELIV-01 | TBD | Pending |
-| DELIV-02 | TBD | Pending |
-| DELIV-03 | TBD | Pending |
-| LEARN-01 | TBD | Pending |
-| LEARN-02 | TBD | Pending |
-| LEARN-03 | TBD | Pending |
-| LEARN-04 | TBD | Pending |
+| FOUND-01 | Phase 1 | Pending |
+| FOUND-02 | Phase 1 | Pending |
+| FOUND-03 | Phase 1 | Pending |
+| FOUND-04 | Phase 1 | Pending |
+| FOUND-05 | Phase 1 | Pending |
+| FOUND-06 | Phase 1 | Pending |
+| PATH-01 | Phase 2 | Pending |
+| PATH-02 | Phase 2 | Pending |
+| PATH-03 | Phase 2 | Pending |
+| MAT-01 | Phase 3 | Pending |
+| MAT-02 | Phase 3 | Pending |
+| MAT-03 | Phase 3 | Pending |
+| MAT-04 | Phase 3 | Pending |
+| INFRA-01 | Phase 4 | Pending |
+| INFRA-02 | Phase 4 | Pending |
+| DELIV-01 | Phase 5 | Pending |
+| DELIV-02 | Phase 5 | Pending |
+| DELIV-03 | Phase 5 | Pending |
+| LEARN-01 | Phase 5 | Pending |
+| LEARN-02 | Phase 5 | Pending |
+| LEARN-03 | Phase 5 | Pending |
+| LEARN-04 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 22 total
-- Mapped to phases: 0
-- Unmapped: 22 (pending roadmap creation)
+- Mapped to phases: 22
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-01-24*
-*Last updated: 2026-01-24 after initial definition*
+*Last updated: 2026-01-24 after roadmap creation*
