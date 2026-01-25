@@ -12,7 +12,7 @@ This roadmap delivers all materials needed for the January 28, 2026 workshop at 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Workshop Content Foundation** - Create Part 1 foundations modules (AI Studio, structured outputs, multimodal, context engineering, grounding, logic engine)
+- [x] **Phase 1: Workshop Content Foundation** - Create Part 1 foundations modules (AI Studio, structured outputs, multimodal, context engineering, grounding, logic engine)
 - [ ] **Phase 2: Project Paths Development** - Build Part 2 project options (face-reactive, camera-game, custom) with starter/reference code
 - [ ] **Phase 3: Supporting Materials** - Create slide deck, cheatsheet, starter templates, and Stockholm theming
 - [ ] **Phase 4: Infrastructure & Deployment** - Setup offline fallbacks and Firebase deployment path
@@ -34,12 +34,12 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 6 plans in 3 waves
 
 Plans:
-- [ ] 01-01-PLAN.md — AI Studio Exploration module (README, demonstration, exercise, solutions)
-- [ ] 01-02-PLAN.md — Structured Output module with JSON Schema examples
-- [ ] 01-03-PLAN.md — Multimodal Input module with sample images
-- [ ] 01-04-PLAN.md — Context Engineering module with prompt templates
-- [ ] 01-05-PLAN.md — Grounding with Google Search module
-- [ ] 01-06-PLAN.md — Logic Engine build (starter template + solutions)
+- [x] 01-01-PLAN.md — AI Studio Exploration module (README, demonstration, exercise, solutions)
+- [x] 01-02-PLAN.md — Structured Output module with JSON Schema examples
+- [x] 01-03-PLAN.md — Multimodal Input module with sample images
+- [x] 01-04-PLAN.md — Context Engineering module with prompt templates
+- [x] 01-05-PLAN.md — Grounding with Google Search module
+- [x] 01-06-PLAN.md — Logic Engine build (starter template + solutions)
 
 ### Phase 2: Project Paths Development
 **Goal**: All three Part 2 project options are ready with starter templates, reference implementations, and extension challenges
@@ -51,10 +51,12 @@ Plans:
   3. Custom project option exists for advanced attendees with clear guidance on building original projects
   4. Each project has starter template (60-70% complete with TODOs), reference implementation (fully working), and extension challenges
   5. All three projects can be completed within 60-75 minutes by target skill level
-**Plans**: TBD
+**Plans**: 3 plans in 1 wave
 
 Plans:
-- [ ] 02-01: TBD during planning
+- [ ] 02-01-PLAN.md — Face-reactive experience (MediaPipe + emotion visualization)
+- [ ] 02-02-PLAN.md — Camera-based multiplayer game (QR + Firebase)
+- [ ] 02-03-PLAN.md — Custom project template with architecture guide
 
 ### Phase 3: Supporting Materials
 **Goal**: All workshop materials are ready (slides, cheatsheet, templates, theming)
@@ -110,12 +112,12 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Workshop Content Foundation | 0/6 | Planned | - |
-| 2. Project Paths Development | 0/TBD | Not started | - |
+| 1. Workshop Content Foundation | 6/6 | Complete | 2026-01-25 |
+| 2. Project Paths Development | 0/3 | Planned | - |
 | 3. Supporting Materials | 0/TBD | Not started | - |
 | 4. Infrastructure & Deployment | 0/TBD | Not started | - |
 | 5. Dry-run & Validation | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-25 after Phase 1 planning*
+*Last updated: 2026-01-25 after Phase 2 planning*

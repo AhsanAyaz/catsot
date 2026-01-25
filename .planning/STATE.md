@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-24)
 
 **Core value:** Attendees leave understanding *how* to architect AI experiences — not just having followed a tutorial.
-**Current focus:** Phase 1 - Workshop Content Foundation
+**Current focus:** Phase 2 - Project Paths Development
 
 ## Current Position
 
-Phase: 1 of 5 (Workshop Content Foundation)
-Plan: 6 of 6 complete (01-06-PLAN.md)
-Status: Phase complete
-Last activity: 2026-01-25 — Completed 01-06-PLAN.md (Logic Engine Module - Capstone)
+Phase: 2 of 5 (Project Paths Development)
+Plan: 0 of 3 planned (02-01, 02-02, 02-03)
+Status: Planning complete, ready for execution
+Last activity: 2026-01-25 — Created Phase 2 execution plans
 
-Progress: [██████░░░░] 100%
+Progress: [██████░░░░] 0% (planning complete)
 
 ## Performance Metrics
 
@@ -28,6 +28,7 @@ Progress: [██████░░░░] 100%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 6/6 | 31 min | 5 min |
+| 02-project-paths | 0/3 | - | - |
 
 **Recent Trend:**
 - 01-01 completed in 4 minutes
@@ -92,6 +93,15 @@ Recent decisions affecting current work:
 - Option A/B exercise paths (guided discount rules vs independent domain selection)
 - Vibe coding pattern demonstrated (describe intent → AI generates implementation)
 
+**From Phase 2 Planning:**
+- 3 parallel plans (Wave 1) for independent project paths (face-reactive, camera-game, custom)
+- 60-70% scaffolding strategy: complete infrastructure + strategic TODOs (not prescriptive fill-in-blanks)
+- Starter vs Reference separation: starter has TODOs, reference has complete implementation
+- Extension challenges pattern: 15+ challenges at multiple difficulty levels for fast finishers
+- Custom project path is truly blank canvas (optional helpers, not prescriptive implementation)
+- Architecture decision guide for custom path (decision matrix, workflow, anti-patterns)
+- Time budget validation: TODO time estimates ensure 60-75 minute completion window
+
 ### Pending Todos
 
 None yet.
@@ -135,11 +145,20 @@ None yet.
 - Code execution validation: Test that all participants can run logic_engine.py in workshop environment
 - Module timing: 20-minute target needs real-world validation with pilot participant in Phase 5
 
+**From Phase 2 Planning:**
+- MediaPipe CDN reliability: Verify cdn.jsdelivr.net/npm/@mediapipe/tasks-vision is stable, have backup CDN URL ready
+- Firebase emulator setup: Document emulator installation and port configuration (9000) for workshop participants
+- Browser compatibility: Test all three project paths in Chrome, Firefox, Safari (especially camera permissions on iOS Safari)
+- Sample QR code generation: Create and test QR codes for camera-game demo before workshop
+- Time estimates validation: TODO time estimates (15 min, 20 min, etc.) need real-world testing with pilot participants
+- Extension challenges feasibility: Verify extension challenges are actually achievable in stated time ranges
+- Custom project examples testing: Test at least 3 examples from EXAMPLES.md to ensure 60-75 min completion
+
 ## Session Continuity
 
-Last session: 2026-01-25 (Phase 1 execution - COMPLETE)
-Stopped at: Completed 01-06-PLAN.md (Logic Engine Module - Phase 1 capstone)
-Resume file: Ready for Phase 2 planning (Part 2 Project Paths)
+Last session: 2026-01-25 (Phase 2 planning - COMPLETE)
+Stopped at: Created 3 execution plans for Phase 2 (02-01, 02-02, 02-03)
+Resume file: Ready for Phase 2 execution (Part 2 Project Paths)
 
 ---
 *State initialized: 2026-01-24*
