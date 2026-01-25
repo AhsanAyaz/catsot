@@ -10,31 +10,32 @@ See: .planning/PROJECT.md (updated 2026-01-24)
 ## Current Position
 
 Phase: 1 of 5 (Workshop Content Foundation)
-Plan: 4 of 6 complete (01-04-PLAN.md)
+Plan: 5 of 6 complete (01-05-PLAN.md)
 Status: In progress
-Last activity: 2026-01-25 — Completed 01-04-PLAN.md (Context Engineering Module)
+Last activity: 2026-01-25 — Completed 01-05-PLAN.md (Grounding with Google Search Module)
 
-Progress: [████░░░░░░] 67%
+Progress: [█████░░░░░] 83%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: 6 minutes
-- Total execution time: 22 minutes
+- Total plans completed: 5
+- Average duration: 5 minutes
+- Total execution time: 27 minutes
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 4/6 | 22 min | 6 min |
+| 01-foundation | 5/6 | 27 min | 5 min |
 
 **Recent Trend:**
 - 01-01 completed in 4 minutes
 - 01-02 completed in 6 minutes
 - 01-03 completed in 6 minutes
 - 01-04 completed in 6 minutes
-- Trend: Stabilized at 6 min per plan (content creation modules)
+- 01-05 completed in 5 minutes
+- Trend: Consistent 5-6 min per plan (content creation modules)
 
 *Updated after each plan completion*
 
@@ -76,6 +77,12 @@ Recent decisions affecting current work:
 - Context engineering + structured output combination = production-ready (schema enforces structure, few-shot ensures quality)
 - Template pattern for reusable prompts (save, share, export to API code)
 
+**From 01-05:**
+- Grounding toggle demonstration over API-first (AI Studio UI more accessible for beginners)
+- Four query types in exercise (current events, facts, Nobel Prize, stock prices) to illustrate selectivity
+- Grounding vs RAG comparison table (positions grounding as modern alternative for public web info)
+- Metadata structure shown in both UI and API contexts (full understanding for implementation)
+
 ### Pending Todos
 
 None yet.
@@ -103,6 +110,12 @@ None yet.
 - Image optimization: Ensure all sample images are ≤384px to minimize token costs during live workshop
 - File API pre-upload: Consider uploading sample images to File API before workshop for reuse efficiency
 
+**From 01-05:**
+- Screenshot placeholders: 4 placeholders in Module 05 demonstration.md need actual screenshots during Phase 5 dry-run
+- Grounding metadata visibility: Current AI Studio UI may not show full metadata - verify during dry-run, API code provided as backup
+- Grounding trigger reliability: Test all exercise prompts 1 day before workshop to ensure consistent behavior
+- Grounding + structured output: "Going Further" section mentions combination - test during Phase 5 to validate compatibility
+
 **From 01-04:**
 - Screenshot placeholders: 3 placeholders in Module 04 demonstration.md need actual AI Studio screenshots during Phase 5 dry-run
 - Template validation: Prompt templates (structured-template.md, few-shot-examples.md) should be tested in real AI Studio during Phase 5
@@ -111,8 +124,8 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-01-25 (Phase 1 execution)
-Stopped at: Completed 01-04-PLAN.md (Context Engineering Module)
-Resume file: Ready to execute 01-05-PLAN.md (Grounding) or 01-06-PLAN.md (Logic Engine)
+Stopped at: Completed 01-05-PLAN.md (Grounding with Google Search Module)
+Resume file: Ready to execute 01-06-PLAN.md (Logic Engine) to complete Phase 1
 
 ---
 *State initialized: 2026-01-24*
