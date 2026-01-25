@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-01-24)
 ## Current Position
 
 Phase: 2 of 5 (Project Paths Development)
-Plan: 1 of 3 completed (02-03)
+Plan: 1 of 3 completed (02-01)
 Status: In progress
-Last activity: 2026-01-25 — Completed 02-03-PLAN.md (Custom Project Template)
+Last activity: 2026-01-25 — Completed 02-01-PLAN.md (Face-Reactive Experience)
 
 Progress: [███████░░░] 7/9 plans (78%)
 
@@ -21,23 +21,23 @@ Progress: [███████░░░] 7/9 plans (78%)
 **Velocity:**
 - Total plans completed: 7
 - Average duration: 5 minutes
-- Total execution time: 35 minutes
+- Total execution time: 36 minutes
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 6/6 | 31 min | 5 min |
-| 02-project-paths | 1/3 | 4 min | 4 min |
+| 02-project-paths | 1/3 | 5 min | 5 min |
 
 **Recent Trend:**
 - 01-04 completed in 6 minutes
 - 01-05 completed in 5 minutes
 - 01-06 completed in 4 minutes
-- 02-03 completed in 4 minutes
+- 02-01 completed in 5 minutes
 - Trend: Maintaining 4-6 min per plan (content creation)
 - **Phase 1 complete:** All 6 modules delivered in 31 minutes total
-- **Phase 2 in progress:** 1/3 plans complete
+- **Phase 2 in progress:** 1/3 plans complete (face-reactive experience)
 
 *Updated after each plan completion*
 
@@ -152,12 +152,23 @@ None yet.
 
 **From Phase 2 Planning:**
 - MediaPipe CDN reliability: Verify cdn.jsdelivr.net/npm/@mediapipe/tasks-vision is stable, have backup CDN URL ready
+- MediaPipe model download (8MB): May require workshop WiFi optimization for 40 simultaneous downloads
 - Firebase emulator setup: Document emulator installation and port configuration (9000) for workshop participants
 - Browser compatibility: Test all three project paths in Chrome, Firefox, Safari (especially camera permissions on iOS Safari)
+- iOS Safari camera permissions: Requires HTTPS (document localhost setup or ngrok for workshop)
 - Sample QR code generation: Create and test QR codes for camera-game demo before workshop
 - Time estimates validation: TODO time estimates (15 min, 20 min, etc.) need real-world testing with pilot participants
 - Extension challenges feasibility: Verify extension challenges are actually achievable in stated time ranges
 - Custom project examples testing: Test at least 3 examples from EXAMPLES.md to ensure 60-75 min completion
+- Blendshape threshold calibration: Threshold 0.5 may need adjustment for individual facial structures (add as extension)
+
+**From 02-01:**
+- MediaPipe Face Landmarker with GPU delegate: 30fps+ on CPU, 60fps on GPU (validate across workshop devices)
+- 6-emotion model chosen (happy, sad, surprised, angry, excited, calm): balances expressiveness vs complexity
+- Object pooling for 150 particles: prevents GC pauses, maintains 60fps
+- Threshold 0.5 for blendshape scores: works across diverse faces but may need per-person calibration
+- Canvas 2D over Three.js for PATH-01: simpler for beginners, Three.js offered in extensions
+- Strategic TODOs: emotion detection (15 min) + particle updates (20 min) = 35 min core work
 
 **From 02-03:**
 - Architecture guide references 02-RESEARCH.md: Ensure research file accessible to attendees or inline key patterns
@@ -168,8 +179,8 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-01-25 (Phase 2 execution - IN PROGRESS)
-Stopped at: Completed 02-03-PLAN.md (Custom Project Template)
-Resume file: Ready to execute 02-01 (Face-Reactive) or 02-02 (Camera-Game)
+Stopped at: Completed 02-01-PLAN.md (Face-Reactive Experience)
+Resume file: Ready to execute 02-02 (Camera-Game) or 02-03 (Custom Project)
 
 ---
 *State initialized: 2026-01-24*
