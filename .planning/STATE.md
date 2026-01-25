@@ -10,34 +10,34 @@ See: .planning/PROJECT.md (updated 2026-01-24)
 ## Current Position
 
 Phase: 2 of 5 (Project Paths Development)
-Plan: 1 of 3 completed (02-01)
+Plan: 2 of 3 completed (02-02)
 Status: In progress
-Last activity: 2026-01-25 — Completed 02-01-PLAN.md (Face-Reactive Experience)
+Last activity: 2026-01-25 — Completed 02-02-PLAN.md (Camera-Based Multiplayer Game)
 
-Progress: [███████░░░] 7/9 plans (78%)
+Progress: [████████░░] 8/9 plans (89%)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
+- Total plans completed: 8
 - Average duration: 5 minutes
-- Total execution time: 36 minutes
+- Total execution time: 44 minutes
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 6/6 | 31 min | 5 min |
-| 02-project-paths | 1/3 | 5 min | 5 min |
+| 02-project-paths | 2/3 | 13 min | 6.5 min |
 
 **Recent Trend:**
-- 01-04 completed in 6 minutes
 - 01-05 completed in 5 minutes
 - 01-06 completed in 4 minutes
 - 02-01 completed in 5 minutes
-- Trend: Maintaining 4-6 min per plan (content creation)
+- 02-02 completed in 8 minutes
+- Trend: Maintaining 4-8 min per plan (content creation)
 - **Phase 1 complete:** All 6 modules delivered in 31 minutes total
-- **Phase 2 in progress:** 1/3 plans complete (face-reactive experience)
+- **Phase 2 in progress:** 2/3 plans complete (face-reactive, camera-game)
 
 *Updated after each plan completion*
 
@@ -100,6 +100,19 @@ Recent decisions affecting current work:
 - Custom project path is truly blank canvas (optional helpers, not prescriptive implementation)
 - Architecture decision guide for custom path (decision matrix, workflow, anti-patterns)
 - Time budget validation: TODO time estimates ensure 60-75 minute completion window
+
+**From 02-01:**
+- MediaPipe emotion detection using 6-category simplified mapping (happy, sad, surprised, angry, relaxed, neutral)
+- Three.js over Canvas 2D for face-reactive path (better performance for particle systems)
+- Circular particles over complex shapes (teaches fundamentals before advanced techniques)
+- 20 extension challenges spanning beginner to advanced (comprehensive learning path)
+
+**From 02-02:**
+- QR code scanning for session joining (camera interaction fits theme, more engaging than text input)
+- Firebase Local Emulator Suite for workshop (no production DB, no internet, no security concerns)
+- Speed clicker reference implementation (demonstrates multiplayer without complex game logic)
+- Last-write-wins pattern for score updates (simpler than transactions, teaches real-world tradeoffs)
+- 26 extension challenges created (exceeds 15-19 planned for comprehensive coverage)
 
 **From 02-03:**
 - Blank canvas over prescriptive scaffolding for advanced attendees (creative freedom vs fill-in-blanks)
@@ -164,6 +177,15 @@ None yet.
 
 **From 02-01:**
 - MediaPipe Face Landmarker with GPU delegate: 30fps+ on CPU, 60fps on GPU (validate across workshop devices)
+- Three.js particle performance: 5000 particles at 60fps on modern GPUs (test on workshop target devices)
+- Extension challenges time validation: Beginner (10-15 min), intermediate (20-30 min), advanced (45+ min) need real testing
+
+**From 02-02:**
+- Firebase emulator installation: Requires Node.js + npm, may take 2-3 min download (include in setup time)
+- html5-qrcode CDN reliability: Verify unpkg.com availability, have cdn.jsdelivr.net backup ready
+- QR scanning on iOS Safari: Requires HTTPS or localhost, document both approaches for workshop
+- Multiplayer testing setup: Need 2+ devices or browser tabs, validate sync performance with 10+ concurrent players
+- Last-write-wins race condition: Two players can win simultaneously (intentional, document as learning moment)
 - 6-emotion model chosen (happy, sad, surprised, angry, excited, calm): balances expressiveness vs complexity
 - Object pooling for 150 particles: prevents GC pauses, maintains 60fps
 - Threshold 0.5 for blendshape scores: works across diverse faces but may need per-person calibration
@@ -179,8 +201,8 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-01-25 (Phase 2 execution - IN PROGRESS)
-Stopped at: Completed 02-01-PLAN.md (Face-Reactive Experience)
-Resume file: Ready to execute 02-02 (Camera-Game) or 02-03 (Custom Project)
+Stopped at: Completed 02-02-PLAN.md (Camera-Based Multiplayer Game)
+Resume file: Ready to execute 02-03 (Custom Project)
 
 ---
 *State initialized: 2026-01-24*
