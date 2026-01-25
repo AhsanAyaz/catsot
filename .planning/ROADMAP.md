@@ -31,10 +31,15 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Context engineering segment exists with prompt crafting exercises and system instruction examples
   5. Grounding demonstration works (search-augmented responses visible)
   6. "Vibe code" logic engine exercise is complete and sets up Part 2 foundation
-**Plans**: TBD
+**Plans**: 6 plans in 3 waves
 
 Plans:
-- [ ] 01-01: TBD during planning
+- [ ] 01-01-PLAN.md — AI Studio Exploration module (README, demonstration, exercise, solutions)
+- [ ] 01-02-PLAN.md — Structured Output module with JSON Schema examples
+- [ ] 01-03-PLAN.md — Multimodal Input module with sample images
+- [ ] 01-04-PLAN.md — Context Engineering module with prompt templates
+- [ ] 01-05-PLAN.md — Grounding with Google Search module
+- [ ] 01-06-PLAN.md — Logic Engine build (starter template + solutions)
 
 ### Phase 2: Project Paths Development
 **Goal**: All three Part 2 project options are ready with starter templates, reference implementations, and extension challenges
@@ -105,7 +110,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Workshop Content Foundation | 0/TBD | Not started | - |
+| 1. Workshop Content Foundation | 0/6 | Planned | - |
 | 2. Project Paths Development | 0/TBD | Not started | - |
 | 3. Supporting Materials | 0/TBD | Not started | - |
 | 4. Infrastructure & Deployment | 0/TBD | Not started | - |
@@ -113,4 +118,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 ---
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-24*
+*Last updated: 2026-01-25 after Phase 1 planning*
