@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "recipe_name": {
+      "type": "string",
+      "description": "The name of the recipe"
+    },
+    "ingredients": {
+      "type": "array",
+      "description": "List of ingredients needed",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "description": "Cooking steps in order",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["recipe_name", "ingredients", "steps"]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "product_name": {
+      "type": "string",
+      "description": "The name of the product"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category (electronics, clothing, food, etc.)"
+    },
+    "price_estimate": {
+      "type": "number",
+      "description": "Estimated price in USD"
+    },
+    "features": {
+      "type": "array",
+      "description": "List of key product features",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target_audience": {
+      "type": "string",
+      "description": "Who this product is designed for"
+    }
+  },
+  "required": ["product_name", "category", "price_estimate", "features"]
+}
