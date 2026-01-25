@@ -1,0 +1,11 @@
+# Placeholder images for Module 03
+
+This directory contains sample images for the multimodal input module:
+
+- chart.png: Sample chart for data extraction demonstration
+- code-screenshot.png: Code snippet for code analysis demonstration
+- ui-mockup.png: UI wireframe for design analysis demonstration
+
+All images should be optimized to ≤384px (width or height) to minimize token costs during the workshop.
+
+Note: These are placeholder references. For actual workshop delivery, replace with real optimized images.
