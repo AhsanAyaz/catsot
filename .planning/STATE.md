@@ -10,28 +10,29 @@ See: .planning/PROJECT.md (updated 2026-01-24)
 ## Current Position
 
 Phase: 1 of 5 (Workshop Content Foundation)
-Plan: 1 of 6 complete (01-01-PLAN.md)
+Plan: 2 of 6 complete (01-02-PLAN.md)
 Status: In progress
-Last activity: 2026-01-25 — Completed 01-01-PLAN.md (AI Studio Exploration Module)
+Last activity: 2026-01-25 — Completed 01-02-PLAN.md (Structured Output Module)
 
-Progress: [█░░░░░░░░░] 17%
+Progress: [██░░░░░░░░] 33%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 4 minutes
-- Total execution time: 4 minutes
+- Total plans completed: 2
+- Average duration: 5 minutes
+- Total execution time: 10 minutes
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1/6 | 4 min | 4 min |
+| 01-foundation | 2/6 | 10 min | 5 min |
 
 **Recent Trend:**
 - 01-01 completed in 4 minutes
-- Trend: First execution baseline established
+- 01-02 completed in 6 minutes
+- Trend: Consistent execution speed (4-6 min per plan)
 
 *Updated after each plan completion*
 
@@ -54,6 +55,12 @@ Recent decisions affecting current work:
 - "Going Further" sections for fast finishers (maintains engagement without instructor intervention)
 - Screenshot placeholders deferred to Phase 5 dry-run (prevents rework if UI changes)
 
+**From 01-02:**
+- Description fields positioned as model instructions, not just documentation (critical insight for quality results)
+- Schema enforcement vs prompt hacking distinction (fundamental mental model for structured output)
+- Four edge case test scenarios in solutions (teaches robustness over single example)
+- Common pitfall demonstration pattern (show what NOT to do cements learning)
+
 ### Pending Todos
 
 None yet.
@@ -71,11 +78,16 @@ None yet.
 - UI verification: AI Studio interface should be verified 1 week before workshop (URL: aistudio.google.com)
 - Module timing: 20-minute target needs real-world validation with pilot participant in Phase 5
 
+**From 01-02:**
+- Screenshot placeholders: 3 placeholders in Module 02 demonstration.md need actual screenshots during Phase 5 dry-run
+- JSON Schema validation: Verify AI Studio schema editor still supports all features used (enum, minimum, maximum constraints)
+- Description field quality: Solution examples should be tested in real AI Studio during Phase 5 to validate effectiveness
+
 ## Session Continuity
 
 Last session: 2026-01-25 (Phase 1 execution)
-Stopped at: Completed 01-01-PLAN.md (AI Studio Exploration Module)
-Resume file: Ready to execute 01-02-PLAN.md (Structured Output)
+Stopped at: Completed 01-02-PLAN.md (Structured Output Module)
+Resume file: Ready to execute 01-03-PLAN.md (Multimodal Input) or other remaining plans
 
 ---
 *State initialized: 2026-01-24*
