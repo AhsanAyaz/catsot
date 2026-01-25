@@ -13,7 +13,7 @@ This roadmap delivers all materials needed for the January 28, 2026 workshop at 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Workshop Content Foundation** - Create Part 1 foundations modules (AI Studio, structured outputs, multimodal, context engineering, grounding, logic engine)
-- [ ] **Phase 2: Project Paths Development** - Build Part 2 project options (face-reactive, camera-game, custom) with starter/reference code
+- [x] **Phase 2: Project Paths Development** - Build Part 2 project options (face-reactive, camera-game, custom) with starter/reference code
 - [ ] **Phase 3: Supporting Materials** - Create slide deck, cheatsheet, starter templates, and Stockholm theming
 - [ ] **Phase 4: Infrastructure & Deployment** - Setup offline fallbacks and Firebase deployment path
 - [ ] **Phase 5: Dry-run & Validation** - Test all materials, validate learning outcomes, and ensure delivery requirements
@@ -54,9 +54,9 @@ Plans:
 **Plans**: 3 plans in 1 wave
 
 Plans:
-- [ ] 02-01-PLAN.md — Face-reactive experience (MediaPipe + emotion visualization)
-- [ ] 02-02-PLAN.md — Camera-based multiplayer game (QR + Firebase)
-- [ ] 02-03-PLAN.md — Custom project template with architecture guide
+- [x] 02-01-PLAN.md — Face-reactive experience (MediaPipe + emotion visualization)
+- [x] 02-02-PLAN.md — Camera-based multiplayer game (QR + Firebase)
+- [x] 02-03-PLAN.md — Custom project template with architecture guide
 
 ### Phase 3: Supporting Materials
 **Goal**: All workshop materials are ready (slides, cheatsheet, templates, theming)
@@ -68,10 +68,12 @@ Plans:
   3. Starter templates exist with TODOs for each Part 2 project option
   4. Stockholm light-touch theming is applied (framing, examples) while keeping projects universal
   5. All materials reference each other correctly (slides link to cheatsheet, templates reference slides)
-**Plans**: TBD
+**Plans**: 3 plans in 1 wave
 
 Plans:
-- [ ] 03-01: TBD during planning
+- [ ] 03-01-PLAN.md — Modular Marp slide deck with Stockholm theming
+- [ ] 03-02-PLAN.md — Task-frequency cheatsheet (Markdown + PDF)
+- [ ] 03-03-PLAN.md — Stockholm theming and cross-reference network
 
 ### Phase 4: Infrastructure & Deployment
 **Goal**: Infrastructure is ready with offline fallbacks and Firebase deployment path
@@ -113,11 +115,11 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Workshop Content Foundation | 6/6 | Complete | 2026-01-25 |
-| 2. Project Paths Development | 0/3 | Planned | - |
-| 3. Supporting Materials | 0/TBD | Not started | - |
+| 2. Project Paths Development | 3/3 | Complete | 2026-01-25 |
+| 3. Supporting Materials | 0/3 | Planned | - |
 | 4. Infrastructure & Deployment | 0/TBD | Not started | - |
 | 5. Dry-run & Validation | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-25 after Phase 2 planning*
+*Last updated: 2026-01-25 after Phase 3 planning*

@@ -5,39 +5,42 @@
 See: .planning/PROJECT.md (updated 2026-01-24)
 
 **Core value:** Attendees leave understanding *how* to architect AI experiences — not just having followed a tutorial.
-**Current focus:** Phase 2 - Project Paths Development
+**Current focus:** Phase 3 - Supporting Materials
 
 ## Current Position
 
-Phase: 2 of 5 (Project Paths Development)
-Plan: 2 of 3 completed (02-02)
-Status: In progress
-Last activity: 2026-01-25 — Completed 02-02-PLAN.md (Camera-Based Multiplayer Game)
+Phase: 3 of 5 (Supporting Materials)
+Plan: 0 of 3 completed (planning complete, ready for execution)
+Status: Planned
+Last activity: 2026-01-25 — Created Phase 3 plans (slides, cheatsheet, theming)
 
-Progress: [████████░░] 8/9 plans (89%)
+Progress: [████████░░] 9/12 plans (75%)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
+- Total plans completed: 9
 - Average duration: 5 minutes
-- Total execution time: 44 minutes
+- Total execution time: 49 minutes
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 6/6 | 31 min | 5 min |
-| 02-project-paths | 2/3 | 13 min | 6.5 min |
+| 02-project-paths | 3/3 | 18 min | 6 min |
+| 03-materials | 0/3 | - | - |
 
 **Recent Trend:**
 - 01-05 completed in 5 minutes
 - 01-06 completed in 4 minutes
 - 02-01 completed in 5 minutes
 - 02-02 completed in 8 minutes
+- 02-03 completed in 5 minutes
 - Trend: Maintaining 4-8 min per plan (content creation)
 - **Phase 1 complete:** All 6 modules delivered in 31 minutes total
-- **Phase 2 in progress:** 2/3 plans complete (face-reactive, camera-game)
+- **Phase 2 complete:** All 3 project paths delivered in 18 minutes total
+- **Phase 3 planned:** 3 plans created (slides, cheatsheet, theming/cross-references)
 
 *Updated after each plan completion*
 
@@ -103,7 +106,7 @@ Recent decisions affecting current work:
 
 **From 02-01:**
 - MediaPipe emotion detection using 6-category simplified mapping (happy, sad, surprised, angry, relaxed, neutral)
-- Three.js over Canvas 2D for face-reactive path (better performance for particle systems)
+- Three.js over Canvas 2D for face-reactive path (better performance for particle systems) — NOTE: Research recommended Canvas 2D for beginners, implementation chose Canvas 2D
 - Circular particles over complex shapes (teaches fundamentals before advanced techniques)
 - 20 extension challenges spanning beginner to advanced (comprehensive learning path)
 
@@ -119,6 +122,16 @@ Recent decisions affecting current work:
 - Single template with decision guide over multiple starters (teach decision-making process)
 - Complete helper modules (camera, Firebase, rendering) with zero TODOs in template
 - 15 diverse example ideas covering solo/multiplayer/creative categories with time estimates
+
+**From Phase 3 Planning:**
+- Marp for slide deck (Markdown-based, version control friendly, code embedding)
+- Modular slide structure (5 files: welcome, part1-intro, transitions, part2-intro, wrap-up)
+- Task-frequency cheatsheet organization (Quick Start → Common → Advanced → Troubleshooting)
+- 2-page cheatsheet constraint (front/back of single sheet, ~150-200 lines Markdown)
+- Stockholm theming via examples (Spotify, Klarna, Fotografiska, King, Mojang)
+- 20% local context, 80% universal technical content
+- Bidirectional cross-references (slides ↔ cheatsheet ↔ modules ↔ projects)
+- Cross-reference matrix for validation and future updates
 
 ### Pending Todos
 
@@ -177,7 +190,7 @@ None yet.
 
 **From 02-01:**
 - MediaPipe Face Landmarker with GPU delegate: 30fps+ on CPU, 60fps on GPU (validate across workshop devices)
-- Three.js particle performance: 5000 particles at 60fps on modern GPUs (test on workshop target devices)
+- Three.js particle performance: 5000 particles at 60fps on modern GPUs (test on workshop target devices) — NOTE: Implementation uses Canvas 2D with 150 particles
 - Extension challenges time validation: Beginner (10-15 min), intermediate (20-30 min), advanced (45+ min) need real testing
 
 **From 02-02:**
@@ -198,11 +211,20 @@ None yet.
 - Custom path validation: Test template with pilot participant to verify blank canvas approach works
 - Helper module browser compatibility: Verify camera.js, firebase.js, rendering.js work across Chrome/Firefox/Safari
 
+**From Phase 3 Planning:**
+- Marp CLI installation: Verify @marp-team/marp-cli is available or use VS Code extension (marp-team.marp-vscode)
+- PDF export tooling: pandoc or markdown-pdf needed for cheatsheet.pdf generation
+- Slide rendering test: Render all slides to HTML/PDF during Phase 5 to verify Marp configuration
+- Cross-reference validation: Run validation commands from CROSS-REFERENCE-MATRIX.md before workshop
+- Stockholm theming consistency: Verify Swedish company examples (Spotify, Klarna, etc.) are current and appropriate
+- Image assets for slides: May need Stockholm office logo, Google branding, example screenshots
+- Speaker notes format: Verify Marp speaker notes (<!-- ... -->) render correctly in presenter mode
+
 ## Session Continuity
 
-Last session: 2026-01-25 (Phase 2 execution - IN PROGRESS)
-Stopped at: Completed 02-02-PLAN.md (Camera-Based Multiplayer Game)
-Resume file: Ready to execute 02-03 (Custom Project)
+Last session: 2026-01-25 (Phase 3 planning - COMPLETE)
+Stopped at: Created all 3 Phase 3 plans (03-01, 03-02, 03-03)
+Resume file: Ready to execute Phase 3 plans
 
 ---
 *State initialized: 2026-01-24*
