@@ -1,5 +1,19 @@
 # Architecture Decision Guide
 
+## Workshop Context
+
+This guide supports advanced attendees building custom projects in Part 2.
+
+📚 **Foundation:** All 6 modules from Part 1 provide building blocks
+📄 **Quick Reference:** See cheatsheet/cheatsheet.md for code patterns
+💡 **Example Ideas:** See EXAMPLES.md for 15 project ideas with time estimates
+📊 **Slides:** Decision matrix in slides/03-part2-intro.md
+
+**Review before starting:**
+- Module 06: Logic Engine (architecture patterns)
+- Module 04: Context Engineering (prompt quality techniques)
+- Cheatsheet: "Advanced Techniques" section
+
 ## Introduction
 
 Building a custom project means making architectural decisions. This guide helps you choose the right tools and patterns for YOUR idea.

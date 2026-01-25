@@ -110,6 +110,15 @@ For those cases, you still need a custom RAG solution.
 
 Expected: 20 minutes | Buffer: 3 minutes
 
+## Quick Reference
+
+📄 **Cheatsheet:** See "Advanced: Grounding with Google Search" in cheatsheet/cheatsheet.md
+
+📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+
+🔗 **Apply in Part 2:**
+- part2/camera-game/ (optional: grounding for trivia questions extension)
+
 ## Next Steps
 
 Proceed to `demonstration.md` for the instructor walkthrough.

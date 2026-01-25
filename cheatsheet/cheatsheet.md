@@ -314,7 +314,28 @@ const model = genAI.getGenerativeModel({
 
 ---
 
-## 6. Troubleshooting — When Stuck
+## 6. Example Use Cases (Stockholm Context)
+
+**Emotion Analysis:**
+- UX Research: Analyze user reactions to new Spotify UI features
+- Retail: Customer sentiment analysis in physical stores (H&M, Ikea)
+- Healthcare: Patient comfort monitoring in waiting rooms
+
+**Image Classification:**
+- Fintech: Receipt scanning for expense categorization (Klarna use case)
+- Logistics: Package identification for Swedish Post automation
+- Food Tech: Menu item recognition for dietary tracking apps
+
+**Real-time Multiplayer:**
+- Gaming: Party games in Swedish co-working spaces
+- Education: Interactive quizzes for Stockholm University workshops
+- Events: Live polling and Q&A for conference attendees
+
+*All examples use universal web APIs — build once, deploy anywhere.*
+
+---
+
+## 7. Troubleshooting — When Stuck
 
 ### Common Errors
 

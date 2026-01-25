@@ -22,6 +22,22 @@ Build a real-time emotion-driven particle visualization using MediaPipe face det
 - TODO 1: Implement emotion detection from blendshapes (15 minutes)
 - TODO 2: Update particle visualization based on emotions (20 minutes)
 
+## Related Workshop Materials
+
+📚 **Review Concepts:**
+- Module 03: Multimodal Input (camera basics)
+- Module 02: Structured Output (emotion JSON)
+
+📄 **Quick Reference:**
+- Cheatsheet: "MediaPipe Face Detection" section
+- Cheatsheet: "Canvas 2D Particle System" section
+
+📊 **Slides:** Introduced in slides/03-part2-intro.md
+
+🎨 **Going Further:**
+- See EXTENSIONS.md for 20 challenges
+- Combine with Module 04 patterns (context engineering for emotion refinement)
+
 ## Setup
 
 1. Open `index.html` in a modern browser (Chrome, Edge, Safari)

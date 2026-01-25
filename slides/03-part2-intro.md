@@ -62,8 +62,12 @@ Apply foundations from Part 1 to real projects
 **Concept:**
 Emotion-driven particle visualization using facial expressions
 
-**Stockholm example:**
-Imagine Fotografiska museum installations responding to visitors
+**Example:** Emotion-based lighting for Fotografiska museum installations
+
+Imagine art that responds to visitors' emotions — digital installations that change
+based on collective mood. Use MediaPipe face detection + Canvas particles.
+
+**Universal application:** UX testing, interactive art, accessibility interfaces
 
 **What's provided (60-70% complete):**
 ✅ Camera setup with permission handling
@@ -102,8 +106,12 @@ Imagine Fotografiska museum installations responding to visitors
 **Concept:**
 QR code scanning for session joining, multiplayer real-time game
 
-**Stockholm example:**
-Swedish gaming culture (King, Mojang) — social, competitive
+**Example:** Multiplayer QR game (Swedish gaming culture: King, Mojang)
+
+Stockholm's rich gaming history meets modern web tech. Build real-time multiplayer
+experiences with Firebase — from party games to training simulations.
+
+**Universal application:** Team building, education, data collection
 
 **What's provided (60-70% complete):**
 ✅ Firebase Realtime Database setup (local emulator)

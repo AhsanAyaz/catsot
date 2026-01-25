@@ -71,6 +71,16 @@ This module includes:
 3. Look for the image upload button (paperclip or image icon)
 4. Follow along with the demonstration
 
+## Quick Reference
+
+📄 **Cheatsheet:** See "Common Tasks: Image Analysis (Multimodal)" in cheatsheet/cheatsheet.md
+
+📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+
+🔗 **Apply in Part 2:**
+- part2/camera-game/ (QR scanning + camera access patterns)
+- part2/face-reactive/ (camera basics for video processing)
+
 ## Next Steps
 
 After completing this module:

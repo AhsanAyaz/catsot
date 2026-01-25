@@ -18,6 +18,22 @@ A multiplayer game where players:
 - **Presence Detection**: Track when players join/leave
 - **Real-time Updates**: Listen to database changes and update UI
 
+## Related Workshop Materials
+
+📚 **Review Concepts:**
+- Module 03: Multimodal Input (camera permission patterns)
+- Module 06: Logic Engine (game state logic)
+
+📄 **Quick Reference:**
+- Cheatsheet: "Firebase Realtime Database" section
+- Cheatsheet: "Troubleshooting: Camera permission denied"
+
+📊 **Slides:** Introduced in slides/03-part2-intro.md
+
+🎮 **Going Further:**
+- See EXTENSIONS.md for 26 challenges
+- Combine with Module 05 (grounding for trivia questions)
+
 ## Setup Instructions
 
 ### 1. Install Firebase CLI

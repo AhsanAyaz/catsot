@@ -45,6 +45,15 @@ This hands-on experience builds the foundation for all subsequent modules. Every
 3. **Solutions** - Reference implementation
    - See: `solutions/solution.md`
 
+## Quick Reference
+
+📄 **Cheatsheet:** See "Quick Start: Basic Gemini Prompt" in cheatsheet/cheatsheet.md
+
+📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+
+🔗 **Apply in Part 2:**
+- Foundation for all Part 2 paths (basic API usage)
+
 ## Time Indicator
 
 ⏱️ **Expected:** 20 minutes | **Buffer:** 3 minutes

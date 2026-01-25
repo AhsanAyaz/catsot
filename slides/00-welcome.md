@@ -65,17 +65,15 @@ Not just following a tutorial — understanding *how* to architect AI.
 
 # Why Stockholm?
 
-**Local Context:**
-Stockholm's creative tech scene — Spotify, Klarna, King, Mojang
+**Creative Tech Hub:**
+- 🎵 Spotify: Music meets AI personalization
+- 💳 Klarna: Fintech innovation
+- 🎮 King, Mojang: Gaming creativity
 
-Music tech + fintech + gaming = perfect testing ground for multimodal AI
+**Today's Mission:**
+Apply multimodal AI to creative coding — the intersection Stockholm does best.
 
-**Today's examples:**
-- Emotion-based visualizations (Fotografiska museum installations)
-- Camera-based multiplayer games (Swedish gaming culture)
-- Your own creative ideas
-
-**Universal skills:** Techniques apply anywhere
+*All skills and projects are universal — Stockholm provides inspiration.*
 
 ---
 

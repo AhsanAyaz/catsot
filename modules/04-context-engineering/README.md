@@ -50,6 +50,15 @@ By the end of this module, you will be able to:
 - **prompt-templates/** - Reusable templates for structured prompts and few-shot patterns
 - **solutions/** - Complete before/after examples with explanations
 
+## Quick Reference
+
+📄 **Cheatsheet:** See "Common Tasks: Context Engineering (Few-Shot)" in cheatsheet/cheatsheet.md
+
+📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+
+🔗 **Apply in Part 2:**
+- All Part 2 paths (prompt quality techniques for better AI results)
+
 ## Next Steps
 
 After completing this module, you'll be ready to:

@@ -83,6 +83,15 @@ A working logic engine that:
 
 This is the shared foundation that all Part 2 projects build upon, whether you create a face-reactive experience, camera game, or custom project.
 
+## Quick Reference
+
+📄 **Cheatsheet:** See "Part 2 Essentials" in cheatsheet/cheatsheet.md
+
+📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+
+🔗 **Apply in Part 2:**
+- All Part 2 paths (logic engine foundation for game rules, state management)
+
 ## Duration Indicator
 
 ⏱️ Expected: 20 minutes | Buffer: 3 minutes

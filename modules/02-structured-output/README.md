@@ -62,6 +62,15 @@ When you define a schema field like:
 
 Gemini uses that description to understand what to populate in that field. Without descriptions, the model has to guess your intent. With descriptions, it has clear guidance.
 
+## Quick Reference
+
+📄 **Cheatsheet:** See "Common Tasks: JSON Structured Output" in cheatsheet/cheatsheet.md
+
+📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+
+🔗 **Apply in Part 2:**
+- part2/face-reactive/ (emotion JSON from blendshape detection)
+
 ## Next Steps
 
 After completing this module, you'll use structured output in:
