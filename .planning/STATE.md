@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-24)
 
 **Core value:** Attendees leave understanding *how* to architect AI experiences — not just having followed a tutorial.
-**Current focus:** Phase 3 - Supporting Materials
+**Current focus:** Phase 4 - Infrastructure & Deployment
 
 ## Current Position
 
-Phase: 3 of 5 (Supporting Materials)
-Plan: 3 of 3 completed
-Status: Phase complete
-Last activity: 2026-01-25 — Completed 03-03-PLAN.md (Stockholm theming and cross-references)
+Phase: 4 of 5 (Infrastructure & Deployment)
+Plan: 1 of 3 completed
+Status: In progress
+Last activity: 2026-01-25 — Completed 04-01-PLAN.md (Offline Fallback Infrastructure)
 
-Progress: [██████████] 12/12 plans (100%)
+Progress: [█████████████░░░░░░░] 13/15 plans (87%)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
-- Average duration: 5.4 minutes
-- Total execution time: 65 minutes
+- Total plans completed: 13
+- Average duration: 5.3 minutes
+- Total execution time: 69 minutes
 
 **By Phase:**
 
@@ -30,18 +30,18 @@ Progress: [██████████] 12/12 plans (100%)
 | 01-foundation | 6/6 | 31 min | 5 min |
 | 02-project-paths | 3/3 | 18 min | 6 min |
 | 03-materials | 3/3 | 16 min | 5.3 min |
+| 04-infrastructure | 1/3 | 4 min | 4 min |
 
 **Recent Trend:**
-- 02-01 completed in 5 minutes
-- 02-02 completed in 8 minutes
-- 02-03 completed in 5 minutes
 - 03-01 completed in 5.5 minutes
 - 03-02 completed in 4.5 minutes
 - 03-03 completed in 6 minutes
-- Trend: Consistent 4-8 min per plan (content creation)
+- 04-01 completed in 4 minutes
+- Trend: Consistent 4-6 min per plan
 - **Phase 1 complete:** All 6 modules delivered in 31 minutes total
 - **Phase 2 complete:** All 3 project paths delivered in 18 minutes total
 - **Phase 3 complete:** All 3 supporting materials delivered in 16 minutes total
+- **Phase 4 in progress:** 1/3 infrastructure plans complete
 
 *Updated after each plan completion*
 
@@ -158,6 +158,13 @@ Recent decisions affecting current work:
 - Quick Reference sections in all module READMEs (cheatsheet → slides → Part 2 application)
 - Related Workshop Materials sections in all Part 2 project READMEs (modules → cheatsheet → slides → extensions)
 
+**From 04-01:**
+- MediaPipe v0.10.15 specifically (v0.10.16+ have missing WASM file issues)
+- window global check for CDN fallback detection (FaceLandmarker for MediaPipe, Html5Qrcode for QR)
+- document.write() fallback pattern for synchronous script loading
+- Keyword-based mock response selection for Gemini API mock (simple, predictable, covers workshop scenarios)
+- CDN URLs updated to include explicit version numbers matching local backups
+
 ### Pending Todos
 
 None yet.
@@ -254,11 +261,16 @@ None yet.
 - Navigation flow testing: During Phase 5 dry-run, verify participants can navigate between materials using cross-references
 - Cheatsheet section names: Module cross-references use specific section names - verify they match actual cheatsheet structure
 
+**From 04-01:**
+- MediaPipe WASM files still load from CDN even with local bundle - full offline requires hosting WASM files locally (out of scope for workshop)
+- Gemini mock requires manual flag (window.GEMINI_OFFLINE_MODE = true) - not automatic fallback
+- CDN fallback pattern resolves earlier concern about unpkg.com reliability
+
 ## Session Continuity
 
-Last session: 2026-01-25 (Phase 3 execution - complete)
-Stopped at: Completed 03-03-PLAN.md (Stockholm theming and cross-references)
-Resume file: Phase 3 complete. All 12 plans across 3 phases delivered. Workshop materials ready for testing and polish.
+Last session: 2026-01-25 (Phase 4 execution - in progress)
+Stopped at: Completed 04-01-PLAN.md (Offline Fallback Infrastructure)
+Resume file: .planning/phases/04-infrastructure/04-02-PLAN.md (Firebase emulator setup)
 
 ---
 *State initialized: 2026-01-24*
