@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-01-24)
 Phase: 3 of 5 (Supporting Materials)
 Plan: 1 of 3 completed
 Status: In progress
-Last activity: 2026-01-25 — Completed 03-02-PLAN.md (cheatsheet creation)
+Last activity: 2026-01-25 — Completed 03-01-PLAN.md (slide deck creation)
 
 Progress: [████████░░] 10/12 plans (83%)
 
@@ -21,7 +21,7 @@ Progress: [████████░░] 10/12 plans (83%)
 **Velocity:**
 - Total plans completed: 10
 - Average duration: 5 minutes
-- Total execution time: 52 minutes
+- Total execution time: 54 minutes
 
 **By Phase:**
 
@@ -29,18 +29,18 @@ Progress: [████████░░] 10/12 plans (83%)
 |-------|-------|-------|----------|
 | 01-foundation | 6/6 | 31 min | 5 min |
 | 02-project-paths | 3/3 | 18 min | 6 min |
-| 03-materials | 1/3 | 3 min | 3 min |
+| 03-materials | 1/3 | 5.5 min | 5.5 min |
 
 **Recent Trend:**
 - 01-06 completed in 4 minutes
 - 02-01 completed in 5 minutes
 - 02-02 completed in 8 minutes
 - 02-03 completed in 5 minutes
-- 03-02 completed in 3 minutes
-- Trend: Fast execution on documentation tasks (3 min)
+- 03-01 completed in 5.5 minutes
+- Trend: Maintaining 4-8 min per plan (content creation)
 - **Phase 1 complete:** All 6 modules delivered in 31 minutes total
 - **Phase 2 complete:** All 3 project paths delivered in 18 minutes total
-- **Phase 3 in progress:** 1 of 3 plans complete (cheatsheet)
+- **Phase 3 in progress:** 1 of 3 plans complete (slide deck)
 
 *Updated after each plan completion*
 
@@ -133,13 +133,13 @@ Recent decisions affecting current work:
 - Bidirectional cross-references (slides ↔ cheatsheet ↔ modules ↔ projects)
 - Cross-reference matrix for validation and future updates
 
-**From 03-02:**
-- Task-frequency organization over API completeness (Quick Start → Common → Advanced → Troubleshooting)
-- Pandoc with weasyprint for PDF export (works without LaTeX dependency)
-- 2-page constraint achieved (374 lines Markdown = ~2 PDF pages front/back)
-- Code examples verified against actual Phase 1 module patterns (not generic)
-- Bidirectional cross-references established: "Covered in: Module XX" and "Apply in: part2/..."
-- Troubleshooting section with common errors table and performance tips
+**From 03-01:**
+- Marp over Reveal.js for slide framework (consistency with Markdown-based module documentation)
+- Modular slide structure (5 separate files) over monolithic deck (easier editing, reordering, reuse)
+- Light-touch Stockholm theming: 20% local (Spotify, Klarna, Fotografiska), 80% universal technical content
+- Embedded code examples in slides (14 JavaScript blocks) for visual reference during demos
+- Speaker notes in HTML comments (15+ blocks) with timing guidance, common questions, Q&A prompts
+- 58 slides total covering 3.5-hour workshop flow (welcome, Part 1, transitions, Part 2, wrap-up)
 
 ### Pending Todos
 
@@ -221,22 +221,23 @@ None yet.
 
 **From Phase 3 Planning:**
 - Marp CLI installation: Verify @marp-team/marp-cli is available or use VS Code extension (marp-team.marp-vscode)
-- Slide rendering test: Render all slides to HTML/PDF during Phase 5 to verify Marp configuration
 - Cross-reference validation: Run validation commands from CROSS-REFERENCE-MATRIX.md before workshop
 - Stockholm theming consistency: Verify Swedish company examples (Spotify, Klarna, etc.) are current and appropriate
-- Image assets for slides: May need Stockholm office logo, Google branding, example screenshots
-- Speaker notes format: Verify Marp speaker notes (<!-- ... -->) render correctly in presenter mode
 
-**From 03-02:**
-- Cheatsheet print testing: Verify PDF prints correctly on workshop printers (2 pages, readable fonts)
-- Digital cheatsheet distribution: Consider hosting on workshop repo for searchable digital access
-- Code example validation: Test copy-paste from cheatsheet during Phase 5 dry-run to ensure accuracy
+**From 03-01:**
+- Marp rendering verification: Test rendering slides to HTML/PDF during Phase 5 to catch formatting issues
+- Stockholm theming assets missing: No Google Stockholm logo file, feedback QR code placeholder, WiFi credentials need filling
+- Cheatsheet references forward-looking: Slides reference "Quick Start", "Common Tasks" sections not yet created (Plan 03-02)
+- Bidirectional cross-references incomplete: Slides → modules/projects ✓, but modules/projects don't reference slides yet
+- Code example currency: Examples use `gemini-2.0-flash` model - verify model name current before workshop
+- Slide density concern: Some slides have 6+ bullet points - consider splitting during dry-run if pacing rushed
+- Code example font size: 20px in pre blocks may be too small for rear of room - test projector visibility
 
 ## Session Continuity
 
-Last session: 2026-01-25 (Phase 3 execution - cheatsheet)
-Stopped at: Completed 03-02-PLAN.md (cheatsheet creation)
-Resume file: Ready to execute remaining Phase 3 plans (03-01 slides, 03-03 theming)
+Last session: 2026-01-25 (Phase 3 execution - slide deck)
+Stopped at: Completed 03-01-PLAN.md (slide deck creation)
+Resume file: Ready to execute remaining Phase 3 plans (03-02 cheatsheet, 03-03 theming)
 
 ---
 *State initialized: 2026-01-24*
