@@ -1,0 +1,78 @@
+{
+  "hosting": [
+    {
+      "target": "face-reactive-starter",
+      "public": "part2/face-reactive/starter",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "**/README.md"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "face-reactive-reference",
+      "public": "part2/face-reactive/reference",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "**/README.md"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "camera-game-starter",
+      "public": "part2/camera-game/starter",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "**/README.md"
+      ]
+    },
+    {
+      "target": "camera-game-reference",
+      "public": "part2/camera-game/reference",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "**/README.md"
+      ]
+    },
+    {
+      "target": "custom-template",
+      "public": "part2/custom-project/template",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "**/README.md"
+      ]
+    }
+  ],
+  "emulators": {
+    "database": {
+      "port": 9000
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": true,
+      "port": 4000
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "projects": {
+    "default": "YOUR-FIREBASE-PROJECT-ID"
+  },
+  "targets": {
+    "YOUR-FIREBASE-PROJECT-ID": {
+      "hosting": {
+        "face-reactive-starter": [
+          "workshop-face-reactive-starter"
+        ],
+        "face-reactive-reference": [
+          "workshop-face-reactive-reference"
+        ],
+        "camera-game-starter": [
+          "workshop-camera-game-starter"
+        ],
+        "camera-game-reference": [
+          "workshop-camera-game-reference"
+        ],
+        "custom-template": [
+          "workshop-custom-template"
+        ]
+      }
+    }
+  }
+}
