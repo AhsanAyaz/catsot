@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-24)
 
 **Core value:** Attendees leave understanding *how* to architect AI experiences — not just having followed a tutorial.
-**Current focus:** Phase 4 - Infrastructure & Deployment
+**Current focus:** Phase 5 - Validation & Testing (next)
 
 ## Current Position
 
-Phase: 4 of 5 (Infrastructure & Deployment)
-Plan: 2 of 3 completed
-Status: In progress
-Last activity: 2026-01-25 — Completed 04-02-PLAN.md (Quota Monitoring and Multi-Key API)
+Phase: 4 of 5 (Infrastructure & Deployment) - COMPLETE
+Plan: 3 of 3 completed
+Status: Phase complete
+Last activity: 2026-01-26 — Completed 04-03-PLAN.md (Firebase Deployment Documentation)
 
-Progress: [██████████████░░░░░░] 14/15 plans (93%)
+Progress: [███████████████████░] 15/15 plans (100% of Phases 1-4)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 14
-- Average duration: 5.4 minutes
-- Total execution time: 75 minutes
+- Total plans completed: 15
+- Average duration: 5.3 minutes
+- Total execution time: 80 minutes
 
 **By Phase:**
 
@@ -30,18 +30,18 @@ Progress: [██████████████░░░░░░] 14/15 p
 | 01-foundation | 6/6 | 31 min | 5 min |
 | 02-project-paths | 3/3 | 18 min | 6 min |
 | 03-materials | 3/3 | 16 min | 5.3 min |
-| 04-infrastructure | 2/3 | 10 min | 5 min |
+| 04-infrastructure | 3/3 | 15 min | 5 min |
 
 **Recent Trend:**
-- 03-02 completed in 4.5 minutes
 - 03-03 completed in 6 minutes
 - 04-01 completed in 4 minutes
 - 04-02 completed in 6 minutes
+- 04-03 completed in 5 minutes (continuation after checkpoint)
 - Trend: Consistent 4-6 min per plan
 - **Phase 1 complete:** All 6 modules delivered in 31 minutes total
 - **Phase 2 complete:** All 3 project paths delivered in 18 minutes total
 - **Phase 3 complete:** All 3 supporting materials delivered in 16 minutes total
-- **Phase 4 in progress:** 2/3 infrastructure plans complete
+- **Phase 4 complete:** All 3 infrastructure plans delivered in 15 minutes total
 
 *Updated after each plan completion*
 
@@ -165,6 +165,13 @@ Recent decisions affecting current work:
 - Keyword-based mock response selection for Gemini API mock (simple, predictable, covers workshop scenarios)
 - CDN URLs updated to include explicit version numbers matching local backups
 
+**From 04-03:**
+- MediaPipe must use ES module import from vision_bundle.mjs, not script tag
+- Version pin MediaPipe to v0.10.3 (0.10.15+ has WASM issues, verified during deployment testing)
+- Backup files must be copied into each project folder, not referenced from root
+- firebase target:apply required before first deployment
+- Human-verified deployment workflow: Firebase emulator serves projects, MediaPipe loads via ES module, face detection working
+
 ### Pending Todos
 
 None yet.
@@ -276,10 +283,10 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-25 (Phase 4 execution - in progress)
-Stopped at: Completed 04-02-PLAN.md (Quota Monitoring and Multi-Key API)
-Resume file: .planning/phases/04-infrastructure/04-03-PLAN.md
+Last session: 2026-01-26 (Phase 4 complete)
+Stopped at: Completed 04-03-PLAN.md (Firebase Deployment Documentation)
+Resume file: None (Phase 4 complete, awaiting Phase 5 planning)
 
 ---
 *State initialized: 2026-01-24*
-*Last updated: 2026-01-25*
+*Last updated: 2026-01-26*
