@@ -104,10 +104,12 @@ Plans:
   6. Dry-run validates attendees understand multimodal input (images as context)
   7. Dry-run validates attendees can integrate MediaPipe for camera-based interactions
   8. Timing validated: Part 1 fits in 2 hours, Part 2 fits in 1.5 hours, with coffee break buffer
-**Plans**: TBD
+**Plans**: 3 plans in 3 waves
 
 Plans:
-- [ ] 05-01: TBD during planning
+- [ ] 05-01-PLAN.md — Pre-dry-run preparation (model name updates, sample images)
+- [ ] 05-02-PLAN.md — Screenshot capture (17 AI Studio screenshots)
+- [ ] 05-03-PLAN.md — Dry-run execution and validation
 
 ## Progress
 
@@ -120,8 +122,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Project Paths Development | 3/3 | Complete | 2026-01-25 |
 | 3. Supporting Materials | 3/3 | Complete | 2026-01-25 |
 | 4. Infrastructure & Deployment | 3/3 | Complete | 2026-01-26 |
-| 5. Dry-run & Validation | 0/TBD | Not started | - |
+| 5. Dry-run & Validation | 0/3 | Not started | - |
 
 ---
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-26 after Phase 4 execution*
+*Last updated: 2026-01-26 after Phase 5 planning*
