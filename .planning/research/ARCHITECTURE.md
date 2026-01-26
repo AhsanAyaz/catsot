@@ -400,13 +400,15 @@ But create different things:
 
 ## Gemini Structured Output (Copy-Paste Ready)
 ```javascript
-const result = await model.generateContent({
-  contents: [{ role: 'user', parts: [{ text: 'Analyze this...' }] }],
-  generationConfig: {
-    temperature: 0.2,
+import { GoogleGenAI, Type } from "@google/genai";
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  config: {
     responseMimeType: 'application/json',
-    responseSchema: { /* your schema */ }
-  }
+    responseSchema: { /* your schema using Type.OBJECT, etc. */ }
+  },
+  contents: 'Analyze this...'
 });
 ```
 

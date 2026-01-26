@@ -336,10 +336,12 @@ Source: Marp documentation (markdown-based slides), common practice from develop
 
 **Basic Gemini Prompt:**
 ```javascript
-import { GoogleGenerativeAI } from "@google/generative-ai";
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-const result = await model.generateContent("Your prompt");
+import { GoogleGenAI } from "@google/genai";
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: "Your prompt"
+});
 ```
 
 **API Key Setup:** Get free key at aistudio.google.com → Get API Key
