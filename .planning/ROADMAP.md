@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Workshop Content Foundation** - Create Part 1 foundations modules (AI Studio, structured outputs, multimodal, context engineering, grounding, logic engine)
 - [x] **Phase 2: Project Paths Development** - Build Part 2 project options (face-reactive, camera-game, custom) with starter/reference code
 - [x] **Phase 3: Supporting Materials** - Create slide deck, cheatsheet, starter templates, and Stockholm theming
-- [ ] **Phase 4: Infrastructure & Deployment** - Setup offline fallbacks and Firebase deployment path
+- [x] **Phase 4: Infrastructure & Deployment** - Setup offline fallbacks and Firebase deployment path
 - [ ] **Phase 5: Dry-run & Validation** - Test all materials, validate learning outcomes, and ensure delivery requirements
 
 ## Phase Details
@@ -87,9 +87,9 @@ Plans:
 **Plans**: 3 plans in 2 waves
 
 Plans:
-- [ ] 04-01-PLAN.md — Offline fallbacks (CDN + local copies, API mocks)
-- [ ] 04-02-PLAN.md — API quota monitoring (multi-key rotation, stats dashboard)
-- [ ] 04-03-PLAN.md — Firebase deployment path (docs, testing, one-click deploy)
+- [x] 04-01-PLAN.md — Offline fallbacks (CDN + local copies, API mocks)
+- [x] 04-02-PLAN.md — API quota monitoring (multi-key rotation, stats dashboard)
+- [x] 04-03-PLAN.md — Firebase deployment path (docs, testing, one-click deploy)
 
 ### Phase 5: Dry-run & Validation
 **Goal**: Workshop is fully validated with dry-run testing and all delivery/learning outcomes verified
@@ -119,9 +119,9 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Workshop Content Foundation | 6/6 | Complete | 2026-01-25 |
 | 2. Project Paths Development | 3/3 | Complete | 2026-01-25 |
 | 3. Supporting Materials | 3/3 | Complete | 2026-01-25 |
-| 4. Infrastructure & Deployment | 0/3 | Planned | - |
+| 4. Infrastructure & Deployment | 3/3 | Complete | 2026-01-26 |
 | 5. Dry-run & Validation | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-25 after Phase 4 planning*
+*Last updated: 2026-01-26 after Phase 4 execution*
