@@ -372,26 +372,21 @@ Citations:
 ### Node.js Example
 
 ```javascript
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
-const genAI = new GoogleGenerativeAI("YOUR_API_KEY");
+const ai = new GoogleGenAI({ apiKey: "YOUR_API_KEY" });
 
 async function groundedQuery() {
-  const model = genAI.getGenerativeModel({
-    model: "gemini-3-flash-preview",
-    tools: [{
-      googleSearch: {}
-    }]
+  const response = await ai.models.generateContent({
+    model: "gemini-flash-latest",
+    config: {
+      tools: [{ googleSearch: {} }]
+    },
+    contents: "What are the latest updates to the Gemini API in January 2026?"
   });
 
-  const result = await model.generateContent(
-    "What are the latest updates to the Gemini API in January 2026?"
-  );
-
-  const response = result.response;
-
   // Access response text
-  console.log("Response:", response.text());
+  console.log("Response:", response.text);
 
   // Access grounding metadata
   if (response.groundingMetadata) {

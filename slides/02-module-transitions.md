@@ -51,21 +51,21 @@ Time check: Should be ~13:20-13:25
 
 **Before (Module 01):**
 ```javascript
-const result = await model.generateContent("Analyze sentiment: I love this!");
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: "Analyze sentiment: I love this!"
+});
 // Output: "This text expresses positive sentiment and excitement."
 // Format: unpredictable text
 ```
 
 **After (Module 02):**
 ```javascript
-const schema = {
-  type: "object",
-  properties: {
-    sentiment: { type: "string", enum: ["positive", "negative", "neutral"] },
-    confidence: { type: "number" }
-  }
-};
-const result = await model.generateContent("Analyze sentiment: I love this!");
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  config: { responseMimeType: "application/json", responseSchema: schema },
+  contents: "Analyze sentiment: I love this!"
+});
 // Output: { "sentiment": "positive", "confidence": 0.95 }
 // Format: guaranteed JSON structure
 ```
@@ -111,23 +111,22 @@ If behind, consider shortening Module 03 exercise variants
 
 **Text-only (Module 02):**
 ```javascript
-await model.generateContent("What's the emotion in: 'I'm so happy!'");
+await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: "What's the emotion in: 'I'm so happy!'"
+});
 // Limited to text tone analysis
 ```
 
 **Text + Image (Module 03):**
 ```javascript
-const imagePart = {
-  inlineData: {
-    data: base64Image,
-    mimeType: "image/png"
-  }
-};
-
-await model.generateContent([
-  "What emotion does this face express?",
-  imagePart
-]);
+await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: [
+    { text: "What emotion does this face express?" },
+    { inlineData: { data: base64Image, mimeType: "image/png" } }
+  ]
+});
 // Analyzes actual facial expressions from image
 ```
 
@@ -174,27 +173,27 @@ Coffee break at 15:00, so need to finish Modules 04-06 in ~50 min
 
 **Simple prompt (Module 03):**
 ```javascript
-await model.generateContent(["Analyze this chart", imagePart]);
+await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: [{ text: "Analyze this chart" }, imagePart]
+});
 // Generic analysis
 ```
 
 **Engineered prompt (Module 04):**
 ```javascript
 const prompt = `
-<context>
-You are a data analyst for a Swedish fintech company.
-</context>
-
+<context>You are a data analyst for a Swedish fintech company.</context>
 <examples>
-Example 1: Rising trend → "Growth phase, consider scaling infrastructure"
-Example 2: Flat line → "Stability phase, optimize costs"
+Rising trend → "Growth phase, consider scaling infrastructure"
+Flat line → "Stability phase, optimize costs"
 </examples>
-
-<task>
-Analyze this chart for actionable insights.
-</task>
+<task>Analyze this chart for actionable insights.</task>
 `;
-await model.generateContent([prompt, imagePart]);
+await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: [{ text: prompt }, imagePart]
+});
 // Context-aware, domain-specific analysis
 ```
 
@@ -239,15 +238,21 @@ Modules 05 and 06 remain (~40 min for both)
 
 **Without grounding:**
 ```javascript
-await model.generateContent("Who won the Nobel Prize in Literature 2025?");
+await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: "Who won the Nobel Prize in Literature 2025?"
+});
 // "I don't have real-time information..."
 ```
 
 **With grounding:**
 ```javascript
-// Enable grounding in AI Studio (toggle ON)
-await model.generateContent("Who won the Nobel Prize in Literature 2025?");
-// "According to nobelprize.org, the 2025 Nobel Prize in Literature was awarded to..."
+await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  config: { tools: [{ googleSearch: {} }] },  // Enable grounding
+  contents: "Who won the Nobel Prize in Literature 2025?"
+});
+// "According to nobelprize.org, the 2025 Nobel Prize was awarded to..."
 // Includes source URLs, grounding chunks
 ```
 
@@ -297,8 +302,12 @@ Module 06 is final before coffee break
 
 **Grounding example (Module 05):**
 ```javascript
-// Query current stock price
-await model.generateContent("What's Spotify's stock price?");
+// Query current stock price with grounding
+await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  config: { tools: [{ googleSearch: {} }] },
+  contents: "What's Spotify's stock price?"
+});
 // Uses Google Search, returns current data
 ```
 

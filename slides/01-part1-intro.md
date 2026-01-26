@@ -77,13 +77,15 @@ Each module follows same pattern:
 **Basic pattern** (you'll use this in Module 01):
 
 ```javascript
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-const result = await model.generateContent("Your prompt here");
-console.log(result.response.text());
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: "Your prompt here"
+});
+console.log(response.text);
 ```
 
 **Simple** — but we'll make it much more powerful.
@@ -169,17 +171,13 @@ const schema = {
 **Example multimodal prompt:**
 
 ```javascript
-const imagePart = {
-  inlineData: {
-    data: base64EncodedImage,
-    mimeType: "image/png"
-  }
-};
-
-const result = await model.generateContent([
-  "What emotion does this face express?",
-  imagePart
-]);
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: [
+    { text: "What emotion does this face express?" },
+    { inlineData: { data: base64EncodedImage, mimeType: "image/png" } }
+  ]
+});
 ```
 
 **File:** `modules/03-multimodal-input/exercise.md`

@@ -10,13 +10,15 @@
 ### Basic Gemini Prompt
 
 ```javascript
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-const result = await model.generateContent("Your prompt here");
-console.log(result.response.text());
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: "Your prompt here"
+});
+console.log(response.text);
 ```
 
 **Covered in:** Module 01 (AI Studio Exploration)
@@ -35,34 +37,33 @@ console.log(result.response.text());
 ### JSON Structured Output
 
 ```javascript
-const schema = {
-  type: "object",
-  properties: {
-    emotion: {
-      type: "string",
-      enum: ["happy", "sad", "surprised", "angry", "calm"],
-      description: "Detected emotion from facial expression"
-    },
-    confidence: {
-      type: "number",
-      minimum: 0,
-      maximum: 1,
-      description: "Confidence score for the emotion detection"
+import { GoogleGenAI, Type } from "@google/genai";
+
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  config: {
+    responseMimeType: "application/json",
+    responseSchema: {
+      type: Type.OBJECT,
+      properties: {
+        emotion: {
+          type: Type.STRING,
+          enum: ["happy", "sad", "surprised", "angry", "calm"],
+          description: "Detected emotion from facial expression"
+        },
+        confidence: {
+          type: Type.NUMBER,
+          description: "Confidence score for the emotion detection"
+        }
+      },
+      required: ["emotion", "confidence"]
     }
   },
-  required: ["emotion", "confidence"]
-};
-
-const model = genAI.getGenerativeModel({
-  model: "gemini-flash-latest",
-  generationConfig: {
-    responseMimeType: "application/json",
-    responseSchema: schema
-  }
+  contents: "Analyze this expression: smiling"
 });
-
-const result = await model.generateContent("Analyze this expression: smiling");
-const data = JSON.parse(result.response.text());
+const data = JSON.parse(response.text);
 ```
 
 **Key insight:** Description fields act as model instructions, not just documentation
@@ -72,26 +73,37 @@ const data = JSON.parse(result.response.text());
 ### Image Analysis (Multimodal)
 
 ```javascript
+import { GoogleGenAI } from "@google/genai";
+
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+
 // Option 1: Inline image data
-const imagePart = {
-  inlineData: {
-    data: base64ImageString,  // Base64-encoded image
-    mimeType: "image/png"
-  }
-};
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: [
+    { text: "Describe this image in detail" },
+    {
+      inlineData: {
+        data: base64ImageString,  // Base64-encoded image
+        mimeType: "image/png"
+      }
+    }
+  ]
+});
 
 // Option 2: Using File API (recommended for production)
-const imagePart = {
-  fileData: {
-    fileUri: "https://generativelanguage.googleapis.com/v1/files/...",
-    mimeType: "image/png"
-  }
-};
-
-const result = await model.generateContent([
-  "Describe this image in detail",
-  imagePart
-]);
+const response = await ai.models.generateContent({
+  model: "gemini-flash-latest",
+  contents: [
+    { text: "Describe this image in detail" },
+    {
+      fileData: {
+        fileUri: "https://generativelanguage.googleapis.com/v1/files/...",
+        mimeType: "image/png"
+      }
+    }
+  ]
+});
 ```
 
 **Token cost:** Images ≤384px = ~258 tokens (resize for cost efficiency)
@@ -280,20 +292,24 @@ onValue(playersRef, (snapshot) => {
 ### Grounding with Google Search
 
 ```javascript
-const model = genAI.getGenerativeModel({
+import { GoogleGenAI } from "@google/genai";
+
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+
+const response = await ai.models.generateContent({
   model: "gemini-flash-latest",
-  tools: [{
-    googleSearch: {}  // Enable grounding with Google Search
-  }]
+  config: {
+    tools: [{ googleSearch: {} }]  // Enable grounding with Google Search
+  },
+  contents: "What are the latest developments in AI from Google?"
 });
 
-const result = await model.generateContent(
-  "What are the latest developments in AI from Google?"
-);
+console.log(response.text);
 
 // Access grounding metadata (sources, citations)
-const metadata = result.response.groundingMetadata;
-console.log("Sources:", metadata.searchEntryPoints);
+if (response.groundingMetadata) {
+  console.log("Sources:", response.groundingMetadata.groundingChunks);
+}
 ```
 
 **AI Studio equivalent:** Toggle "Grounding" on in Tools panel
@@ -303,13 +319,20 @@ console.log("Sources:", metadata.searchEntryPoints);
 ### System Instructions
 
 ```javascript
-const model = genAI.getGenerativeModel({
+import { GoogleGenAI } from "@google/genai";
+
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+
+const response = await ai.models.generateContent({
   model: "gemini-flash-latest",
-  systemInstruction: "You are a helpful code review assistant. Provide concise, actionable feedback on code quality, readability, and best practices."
+  config: {
+    systemInstruction: "You are a helpful code review assistant. Provide concise, actionable feedback on code quality, readability, and best practices."
+  },
+  contents: "Review this function: function add(a,b){return a+b}"
 });
 ```
 
-**Applies to all prompts** in the same model instance
+**System instruction applies to** the request and shapes response behavior
 **Covered in:** Module 04 (Context Engineering)
 
 ---
