@@ -39,7 +39,7 @@ This is where all Gemini integrations begin. You prototype here, then move to pr
 
 **Note for participants:** If you're not signed in, you'll be prompted. Any Google Account works (personal or work).
 
-[Screenshot: AI Studio landing page]
+![AI Studio landing page](screenshots/01-landing-page.png)
 
 ---
 
@@ -57,9 +57,9 @@ This is where all Gemini integrations begin. You prototype here, then move to pr
 
 **Talking point:** "Freeform prompts are the simplest type - just text in, text out. We'll explore other types in later modules."
 
-[Screenshot: Prompt type selection]
+![Prompt type selection](screenshots/02-prompt-type-selection.png)
 
-[Screenshot: Empty prompt editor]
+![Empty prompt editor](screenshots/03-empty-prompt-editor.png)
 
 ---
 
@@ -84,7 +84,7 @@ This is where all Gemini integrations begin. You prototype here, then move to pr
 
 **Talking point:** "Gemini 3 Flash is the fast, cost-effective model perfect for testing. Pro models offer higher quality but cost more."
 
-[Screenshot: Prompt entered in editor]
+![Prompt entered in editor](screenshots/04-prompt-entered.png)
 
 ---
 
@@ -115,7 +115,7 @@ Here are 3 benefits of using AI in developer workflows:
 3. **Enhanced Learning**: Developers can use AI to explain complex code, learn new frameworks...
 ```
 
-[Screenshot: Response generated with token count]
+![Response with token count](screenshots/05-response-with-tokens.png)
 
 ---
 
@@ -152,7 +152,7 @@ print(response.text)
 
 **Talking point:** "Notice how simple this is - your natural language prompt becomes one API call. This is the foundation of Gemini integration."
 
-[Screenshot: Get code panel with Python example]
+![Get code panel](screenshots/06-get-code-panel.png)
 
 ---
 
@@ -188,7 +188,7 @@ print(response.text)
 
 **Talking point:** "Notice I asked for JSON, but the result isn't guaranteed to be valid JSON. That's because we're using a freeform prompt. In Module 02, you'll learn how to *enforce* JSON structure using schemas. This is a preview of why structured output matters."
 
-[Screenshot: Modified prompt with different response]
+![Modified prompt with JSON response](screenshots/07-modified-prompt.png)
 
 ---
 

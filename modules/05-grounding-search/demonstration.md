@@ -49,7 +49,7 @@ Who won Euro 2024?
 **Point out:**
 "Notice the model is correctly indicating uncertainty or providing generic information. It doesn't have data about Euro 2024 because that's after its training cutoff."
 
-**[Screenshot: Non-grounded response showing knowledge cutoff limitation]**
+![Non-grounded response](screenshots/01-non-grounded.png)
 
 ---
 
@@ -72,7 +72,7 @@ Who won Euro 2024?
 **Point out:**
 "This is all it takes. One toggle. No API keys to configure, no infrastructure to set up. Let's run the same prompt again."
 
-**[Screenshot: Tools panel with grounding enabled]**
+![Tools panel with grounding](screenshots/03-grounded-response.png)
 
 ---
 
@@ -96,7 +96,7 @@ Who won Euro 2024?
 3. The model synthesized multiple sources automatically
 4. This happened without any code or infrastructure from us"
 
-**[Screenshot: Grounded response with citations visible]**
+![Grounded response with citations](screenshots/03-grounded-response.png)
 
 ---
 
@@ -131,7 +131,7 @@ Who won Euro 2024?
 - Show confidence scores to users
 - Track which sources are most relevant"
 
-**[Screenshot: Grounding metadata panel showing structure]**
+![Grounding metadata panel](screenshots/04-metadata-panel.png)
 
 ---
 

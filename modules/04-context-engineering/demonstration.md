@@ -51,7 +51,7 @@ The code is functional but could be improved:
 - May miss specific concerns (security, performance, etc.)
 - Not reproducible - different runs might emphasize different things
 
-[Screenshot: Unstructured prompt response]
+![Unstructured prompt response](screenshots/01-unstructured-response.png)
 
 ## Step 2: Add System Instructions (1 minute)
 
@@ -84,7 +84,7 @@ Code Review:
 - Response is more aligned with our needs
 - System instruction applies to ALL prompts in this session
 
-[Screenshot: System instructions panel with code review assistant role]
+![System instructions panel](screenshots/02-system-instructions.png)
 
 ## Step 3: Structure the Prompt with XML Tags (1 minute)
 
@@ -172,7 +172,7 @@ Feedback:
 - Consistent format across different code inputs
 - 2-3 examples is usually optimal (more examples = more tokens, diminishing returns)
 
-[Screenshot: Few-shot prompt with consistent formatted output]
+![Few-shot prompt output](screenshots/03-few-shot-prompt.png)
 
 ## Step 5: Combine with Structured Output (1 minute)
 

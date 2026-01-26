@@ -62,7 +62,7 @@ The iPhone 15 Pro is Apple's flagship smartphone featuring...
 **Point out:**
 "Notice this is natural language – great for reading, but how do you parse this? Where does 'product_name' end and 'features' begin? You'd need complex regex or hope the format is consistent. This is the problem."
 
-**Screenshot placeholder:** `[Screenshot: Text response from unstructured prompt]`
+![Text response from unstructured prompt](screenshots/01-text-response.png)
 
 ---
 
@@ -87,7 +87,7 @@ Schema editor appears below the selection, showing a JSON schema input area
 **Say to participants:**
 "This is where the magic happens. JSON mode tells Gemini: don't just try to return JSON – guarantee it. And the schema defines exactly what structure we want."
 
-**Screenshot placeholder:** `[Screenshot: Run settings panel with JSON mode selected and schema editor visible]`
+![Run settings with JSON mode](screenshots/02-run-settings-json.png)
 
 ---
 
@@ -170,7 +170,7 @@ Valid JSON response matching the schema structure:
 3. **Descriptions guided content** – Model used description fields to populate values correctly
 4. **Production-ready** – This JSON can be directly parsed, validated, inserted into a database
 
-**Screenshot placeholder:** `[Screenshot: JSON response matching schema with proper formatting]`
+![JSON response matching schema](screenshots/03-json-response.png)
 
 ---
 
