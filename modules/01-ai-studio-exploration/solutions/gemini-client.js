@@ -33,10 +33,10 @@ function getAPI() {
  * This mirrors what you do in AI Studio's prompt interface.
  *
  * @param {string} prompt - The text prompt
- * @param {string} model - Model name, default 'gemini-2.0-flash'
+ * @param {string} model - Model name, default 'gemini-2.0-flash-001'
  * @returns {Promise<string>} - Generated text
  */
-export async function generateText(prompt, model = 'gemini-2.0-flash') {
+export async function generateText(prompt, model = 'gemini-2.0-flash-001') {
   const api = getAPI();
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
@@ -71,7 +71,7 @@ export async function generateText(prompt, model = 'gemini-2.0-flash') {
  * @param {string} model - Model name
  * @returns {Promise<string>} - Generated text
  */
-export async function generateWithSystem(systemInstruction, userPrompt, model = 'gemini-2.0-flash') {
+export async function generateWithSystem(systemInstruction, userPrompt, model = 'gemini-2.0-flash-001') {
   const api = getAPI();
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 

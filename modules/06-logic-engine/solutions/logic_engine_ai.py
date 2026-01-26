@@ -48,13 +48,13 @@ class QuotaAwareGemini:
         self.verbose = verbose
         self.total_requests = 0
 
-    def call(self, prompt: str, model: str = "gemini-2.0-flash") -> Dict[str, Any]:
+    def call(self, prompt: str, model: str = "gemini-2.0-flash-001") -> Dict[str, Any]:
         """
         Make an API call with automatic key rotation on quota errors.
 
         Args:
             prompt: The text prompt to send
-            model: Model name (default: gemini-2.0-flash)
+            model: Model name (default: gemini-2.0-flash-001)
 
         Returns:
             Parsed JSON response from Gemini API
@@ -131,7 +131,7 @@ class QuotaAwareGemini:
         self,
         prompt: str,
         schema: Dict[str, Any],
-        model: str = "gemini-2.0-flash"
+        model: str = "gemini-2.0-flash-001"
     ) -> Dict[str, Any]:
         """
         Make an API call expecting structured JSON output.

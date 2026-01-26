@@ -43,7 +43,7 @@ console.log(text);
 
 // Raw API call (for structured output, multimodal, etc.)
 const response = await api.call(
-  'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
+  'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-001:generateContent',
   {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -175,7 +175,7 @@ Rotation happens automatically. Check for:
 
 - Check network connectivity
 - Verify API endpoint URL is correct
-- Check for model name changes (gemini-2.0-flash may be renamed)
+- Check for model name changes (gemini-2.0-flash-001 may be renamed)
 - Verify response structure matches expectations
 
 ## See Also

@@ -33,10 +33,10 @@ function getAPI() {
  *
  * @param {Object} schema - JSON Schema defining output structure
  * @param {string} prompt - The generation prompt
- * @param {string} model - Model name, default 'gemini-2.0-flash'
+ * @param {string} model - Model name, default 'gemini-2.0-flash-001'
  * @returns {Promise<Object>} - Parsed JSON matching schema
  */
-export async function generateStructured(schema, prompt, model = 'gemini-2.0-flash') {
+export async function generateStructured(schema, prompt, model = 'gemini-2.0-flash-001') {
   const api = getAPI();
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
