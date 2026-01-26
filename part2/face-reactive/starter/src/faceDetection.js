@@ -2,8 +2,11 @@
 // MEDIAPIPE FACE DETECTION - COMPLETE
 // ============================================
 
-// MediaPipe UMD bundle exposes classes under window.vision namespace
-const { FaceLandmarker, FilesetResolver } = window.vision || window;
+// Import MediaPipe as ES module from CDN
+// See: https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker/web_js
+import vision from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3";
+
+const { FaceLandmarker, FilesetResolver } = vision;
 
 let faceLandmarker = null;
 let lastVideoTime = -1;
@@ -13,13 +16,13 @@ let lastVideoTime = -1;
  * COMPLETE - Face detection infrastructure ready
  */
 export async function initFaceLandmarker() {
-  // Load MediaPipe vision tasks
-  const vision = await FilesetResolver.forVisionTasks(
-    "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm"
+  // Load MediaPipe vision tasks WASM runtime
+  const filesetResolver = await FilesetResolver.forVisionTasks(
+    "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/wasm"
   );
 
   // Create Face Landmarker with options
-  faceLandmarker = await FaceLandmarker.createFromOptions(vision, {
+  faceLandmarker = await FaceLandmarker.createFromOptions(filesetResolver, {
     baseOptions: {
       modelAssetPath: "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task",
       delegate: "GPU"  // Use GPU acceleration

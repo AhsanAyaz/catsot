@@ -46,9 +46,8 @@
   <video id="webcam" autoplay playsinline></video>
   <canvas id="canvas"></canvas>
 
-  <!-- CDN with automatic fallback: loads from CDN first, falls back to /backup/libs/ if CDN blocked/slow/down -->
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision"
-          onerror="this.onerror=null; this.src='/backup/libs/mediapipe-vision-bundle.js'"></script>
+  <!-- MediaPipe is imported as ES module in src/faceDetection.js -->
+  <!-- Fallback: copy backup/libs/mediapipe-vision-bundle.js content and serve locally if CDN blocked -->
 
   <script type="module" src="./src/main.js"></script>
 </body>
