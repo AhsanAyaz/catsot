@@ -34,20 +34,16 @@
     Uncomment the CDN + fallback pair for libraries you want to use.
   -->
 
-  <!-- Optional: MediaPipe for face detection -->
+  <!-- Optional: MediaPipe for face detection (uncomment to use) -->
   <!--
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.15/vision_bundle.mjs"></script>
-  <script>
-    window.FaceLandmarker || document.write('<script src="/backup/libs/mediapipe-vision-bundle.js"><\/script>');
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.15/vision_bundle.js"
+          onerror="this.onerror=null; this.src='/backup/libs/mediapipe-vision-bundle.js'"></script>
   -->
 
-  <!-- Optional: html5-qrcode for QR scanning -->
+  <!-- Optional: html5-qrcode for QR scanning (uncomment to use) -->
   <!--
-  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-  <script>
-    window.Html5Qrcode || document.write('<script src="/backup/libs/html5-qrcode.min.js"><\/script>');
-  </script>
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"
+          onerror="this.onerror=null; this.src='/backup/libs/html5-qrcode.min.js'"></script>
   -->
 
   <!-- Optional: Firebase for multiplayer (ES modules - import in your JS) -->

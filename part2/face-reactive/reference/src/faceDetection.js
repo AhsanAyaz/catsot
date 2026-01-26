@@ -2,7 +2,8 @@
 // MEDIAPIPE FACE DETECTION - COMPLETE
 // ============================================
 
-const { FaceLandmarker, FilesetResolver } = window;
+// MediaPipe UMD bundle exposes classes under window.vision namespace
+const { FaceLandmarker, FilesetResolver } = window.vision || window;
 
 let faceLandmarker = null;
 let lastVideoTime = -1;

@@ -208,11 +208,9 @@
 
   <!-- CDN with automatic fallback: loads from CDN first, falls back to /backup/libs/ if CDN blocked/slow/down -->
 
-  <!-- QR Code Scanner -->
-  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-  <script>
-    window.Html5Qrcode || document.write('<script src="/backup/libs/html5-qrcode.min.js"><\/script>');
-  </script>
+  <!-- QR Code Scanner with automatic fallback -->
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"
+          onerror="this.onerror=null; this.src='/backup/libs/html5-qrcode.min.js'"></script>
 
   <!-- Main app -->
   <script type="module" src="src/main.js"></script>
