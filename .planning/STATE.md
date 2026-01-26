@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-24)
 
 **Core value:** Attendees leave understanding *how* to architect AI experiences — not just having followed a tutorial.
-**Current focus:** Phase 5 - Validation & Testing (next)
+**Current focus:** Phase 5 - Validation & Testing (in progress)
 
 ## Current Position
 
-Phase: 4 of 5 (Infrastructure & Deployment) - COMPLETE
-Plan: 3 of 3 completed
-Status: Phase complete
-Last activity: 2026-01-26 — Completed 04-03-PLAN.md (Firebase Deployment Documentation)
+Phase: 5 of 5 (Validation & Testing) - IN PROGRESS
+Plan: 1 of 2 completed
+Status: In progress
+Last activity: 2026-01-26 — Completed 05-01-PLAN.md (Workshop Material Fixes)
 
-Progress: [███████████████████░] 15/15 plans (100% of Phases 1-4)
+Progress: [████████████████████] 16/17 plans (94%)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 15
-- Average duration: 5.3 minutes
-- Total execution time: 80 minutes
+- Total plans completed: 16
+- Average duration: 5.2 minutes
+- Total execution time: 83 minutes
 
 **By Phase:**
 
@@ -31,17 +31,19 @@ Progress: [███████████████████░] 15/15 p
 | 02-project-paths | 3/3 | 18 min | 6 min |
 | 03-materials | 3/3 | 16 min | 5.3 min |
 | 04-infrastructure | 3/3 | 15 min | 5 min |
+| 05-validation | 1/2 | 3 min | 3 min |
 
 **Recent Trend:**
-- 03-03 completed in 6 minutes
 - 04-01 completed in 4 minutes
 - 04-02 completed in 6 minutes
 - 04-03 completed in 5 minutes (continuation after checkpoint)
-- Trend: Consistent 4-6 min per plan
+- 05-01 completed in 3 minutes
+- Trend: Consistent 3-6 min per plan
 - **Phase 1 complete:** All 6 modules delivered in 31 minutes total
 - **Phase 2 complete:** All 3 project paths delivered in 18 minutes total
 - **Phase 3 complete:** All 3 supporting materials delivered in 16 minutes total
 - **Phase 4 complete:** All 3 infrastructure plans delivered in 15 minutes total
+- **Phase 5 in progress:** 1 of 2 plans complete
 
 *Updated after each plan completion*
 
@@ -75,6 +77,11 @@ Recent decisions affecting current work:
 - Multimodal + structured output combination demonstrates feature composability (key learning outcome)
 - File API vs inline data both shown (production optimization vs quick testing patterns)
 - Three representative image types: chart (data), code (technical), UI (design)
+
+**From 05-01:**
+- Used gemini-flash-latest alias per user override (automatically uses latest flash model)
+- Generated sample images programmatically with PIL (384px max, under 100KB)
+- Model aliasing pattern: Use -latest suffix for automatic version updates without manual maintenance
 
 **From 01-04:**
 - 5-version progression pattern (unstructured → system instructions → XML tags → few-shot → +structured output)
@@ -195,8 +202,8 @@ None yet.
 - Description field quality: Solution examples should be tested in real AI Studio during Phase 5 to validate effectiveness
 
 **From 01-03:**
-- Actual image files needed: Replace placeholder references (chart.png, code-screenshot.png, ui-mockup.png) with real optimized images
-- Image optimization: Ensure all sample images are ≤384px to minimize token costs during live workshop
+- Actual image files needed: RESOLVED - chart.png, code-screenshot.png, ui-mockup.png created and optimized
+- Image optimization: RESOLVED - All sample images are ≤384px (token cost optimized)
 - File API pre-upload: Consider uploading sample images to File API before workshop for reuse efficiency
 
 **From 01-05:**
@@ -258,7 +265,7 @@ None yet.
 **From 03-01:**
 - Marp rendering verification: Test rendering slides to HTML/PDF during Phase 5 to catch formatting issues
 - Stockholm theming assets missing: No Google Stockholm logo file, feedback QR code placeholder, WiFi credentials need filling
-- Code example currency: Examples use `gemini-2.0-flash` model - verify model name current before workshop
+- Code example currency: RESOLVED - All examples now use `gemini-flash-latest` model alias
 - Slide density concern: Some slides have 6+ bullet points - consider splitting during dry-run if pacing rushed
 - Code example font size: 20px in pre blocks may be too small for rear of room - test projector visibility
 
@@ -283,9 +290,9 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-26 (Phase 4 complete)
-Stopped at: Completed 04-03-PLAN.md (Firebase Deployment Documentation)
-Resume file: None (Phase 4 complete, awaiting Phase 5 planning)
+Last session: 2026-01-26
+Stopped at: Completed 05-01-PLAN.md (Workshop Material Fixes - re-executed with gemini-flash-latest)
+Resume file: None
 
 ---
 *State initialized: 2026-01-24*
