@@ -138,7 +138,7 @@ Choose colors, speeds, and movement patterns that visually represent this emotio
 For ${emotion}, think about what colors and movements feel right.`;
 
   try {
-    const endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-001:generateContent';
+    const endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent';
 
     const response = await api.call(endpoint, {
       method: 'POST',

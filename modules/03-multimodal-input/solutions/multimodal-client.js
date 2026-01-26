@@ -51,10 +51,10 @@ function getMimeType(filePath) {
  * @param {string} imageBase64 - Base64-encoded image data
  * @param {string} prompt - Question or instruction about the image
  * @param {string} mimeType - Image MIME type (default: image/png)
- * @param {string} model - Model name, default 'gemini-2.0-flash-001'
+ * @param {string} model - Model name, default 'gemini-flash-latest'
  * @returns {Promise<string>} - Analysis text
  */
-export async function analyzeImage(imageBase64, prompt, mimeType = 'image/png', model = 'gemini-2.0-flash-001') {
+export async function analyzeImage(imageBase64, prompt, mimeType = 'image/png', model = 'gemini-flash-latest') {
   const api = getAPI();
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
@@ -117,7 +117,7 @@ export async function analyzeImageFile(filePath, prompt) {
  */
 export async function analyzeImageStructured(imageBase64, schema, prompt, mimeType = 'image/png') {
   const api = getAPI();
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-001:generateContent`;
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`;
 
   const response = await api.call(endpoint, {
     method: 'POST',

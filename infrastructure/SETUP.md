@@ -254,7 +254,7 @@ console.log(`Error rate: ${stats.totalErrors / stats.totalRequests * 100}%`);
 
 1. Check network: `ping generativelanguage.googleapis.com`
 2. Verify endpoint URL in quota-monitor.js
-3. Check model name: `gemini-2.0-flash-001` may be renamed
+3. Check model name: `gemini-flash-latest` may be renamed
 4. Check response structure in API documentation
 
 ### API Key Not Found

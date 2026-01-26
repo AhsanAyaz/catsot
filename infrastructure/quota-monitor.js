@@ -283,10 +283,10 @@ export function createFromEnv(options = {}) {
  *
  * @param {QuotaAwareAPI} api - The QuotaAwareAPI instance
  * @param {string} prompt - The text prompt to send
- * @param {string} model - Model name, default 'gemini-2.0-flash-001'
+ * @param {string} model - Model name, default 'gemini-flash-latest'
  * @returns {Promise<string>} - The generated text response
  */
-export async function generateContent(api, prompt, model = 'gemini-2.0-flash-001') {
+export async function generateContent(api, prompt, model = 'gemini-flash-latest') {
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
   const response = await api.call(endpoint, {

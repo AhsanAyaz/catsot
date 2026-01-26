@@ -13,7 +13,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-001" });
+const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
 const result = await model.generateContent("Your prompt here");
 console.log(result.response.text());
@@ -54,7 +54,7 @@ const schema = {
 };
 
 const model = genAI.getGenerativeModel({
-  model: "gemini-2.0-flash-001",
+  model: "gemini-flash-latest",
   generationConfig: {
     responseMimeType: "application/json",
     responseSchema: schema
@@ -281,7 +281,7 @@ onValue(playersRef, (snapshot) => {
 
 ```javascript
 const model = genAI.getGenerativeModel({
-  model: "gemini-2.0-flash-001",
+  model: "gemini-flash-latest",
   tools: [{
     googleSearch: {}  // Enable grounding with Google Search
   }]
@@ -304,7 +304,7 @@ console.log("Sources:", metadata.searchEntryPoints);
 
 ```javascript
 const model = genAI.getGenerativeModel({
-  model: "gemini-2.0-flash-001",
+  model: "gemini-flash-latest",
   systemInstruction: "You are a helpful code review assistant. Provide concise, actionable feedback on code quality, readability, and best practices."
 });
 ```
