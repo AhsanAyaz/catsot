@@ -1,0 +1,27 @@
+{
+  "projects": {
+    "staging": "catsot-fd20d"
+  },
+  "targets": {
+    "catsot-fd20d": {
+      "hosting": {
+        "face-reactive-starter": [
+          "face-reactive-starter"
+        ],
+        "face-reactive-reference": [
+          "face-reactive-reference"
+        ],
+        "camera-game-starter": [
+          "camera-game-starter"
+        ],
+        "camera-game-reference": [
+          "camera-game-reference"
+        ],
+        "custom-template": [
+          "custom-template"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
