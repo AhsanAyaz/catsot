@@ -21,6 +21,9 @@ By the end of this module, you will be able to:
 - Use **system instructions** to set model behavior and perspective
 - Apply **few-shot examples** to teach desired output patterns
 - Recognize when to use **structured delimiters** (XML tags, Markdown) to help models parse prompt sections
+- Apply **hierarchical context design** (System, Task, Tool, Memory layers)
+- Use **decision flowcharts** to diagnose prompt problems
+- Understand **security considerations** (prompt injection, input sanitization)
 - Combine context engineering with structured output for production-ready consistency
 
 ## Prerequisites

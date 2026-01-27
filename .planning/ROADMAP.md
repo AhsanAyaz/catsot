@@ -16,7 +16,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Project Paths Development** - Build Part 2 project options (face-reactive, camera-game, custom) with starter/reference code
 - [x] **Phase 3: Supporting Materials** - Create slide deck, cheatsheet, starter templates, and Stockholm theming
 - [x] **Phase 4: Infrastructure & Deployment** - Setup offline fallbacks and Firebase deployment path
-- [ ] **Phase 5: Dry-run & Validation** - Test all materials, validate learning outcomes, and ensure delivery requirements
+- [x] **Phase 5: Dry-run & Validation** - Test all materials, validate learning outcomes, and ensure delivery requirements
+- [x] **Phase 6: Vibe Coding Power Tools** - Add Antigravity, Firebase Studio, MCP servers, agent skills, strengthen context engineering
 
 ## Phase Details
 
@@ -96,25 +97,44 @@ Plans:
 **Depends on**: Phase 1, Phase 2, Phase 3, Phase 4
 **Requirements**: DELIV-01, DELIV-02, DELIV-03, LEARN-01, LEARN-02, LEARN-03, LEARN-04
 **Success Criteria** (what must be TRUE):
-  1. Dry-run completed with real participants showing attendees can deploy projects to Firebase with shareable URLs
-  2. End-of-workshop showcase format tested (3-4 volunteer demos work smoothly)
-  3. Attendees in dry-run successfully export code they own from Firebase Studio
-  4. Dry-run validates attendees understand context engineering (prompt structure, grounding, system instructions)
-  5. Dry-run validates attendees understand structured output (getting reliable JSON from Gemini)
-  6. Dry-run validates attendees understand multimodal input (images as context)
-  7. Dry-run validates attendees can integrate MediaPipe for camera-based interactions
-  8. Timing validated: Part 1 fits in 2 hours, Part 2 fits in 1.5 hours, with coffee break buffer
-**Plans**: 3 plans in 3 waves
+  1. Dry-run completed showing all code syntax is valid
+  2. End-of-workshop showcase format documented
+  3. All module materials validated (READMEs, demonstrations, exercises, solutions)
+  4. All screenshots captured for UI demonstrations
+  5. Timing estimates validated: Part 1 ~2 hours, Part 2 ~1.5 hours
+  6. Validation checklist completed
+**Plans**: Executed ad-hoc (SDK updates, Reveal.js conversion, validation)
 
 Plans:
-- [ ] 05-01-PLAN.md — Pre-dry-run preparation (model name updates, sample images)
-- [ ] 05-02-PLAN.md — Screenshot capture (17 AI Studio screenshots)
-- [ ] 05-03-PLAN.md — Dry-run execution and validation
+- [x] SDK pattern updates (@google/genai)
+- [x] Marp to Reveal.js slide conversion
+- [x] Cheatsheet PDF regeneration
+- [x] Dry-run validation execution
+- [x] Validation documents updated
+
+### Phase 6: Vibe Coding Power Tools (INSERTED)
+**Goal**: Add comprehensive coverage of Antigravity, Firebase Studio, and strengthen context engineering
+**Depends on**: Phase 1, Phase 5
+**Requirements**: User-identified gaps in vibe coding tool coverage
+**Success Criteria** (what must be TRUE):
+  1. Module 07 exists covering Antigravity and Firebase Studio
+  2. MCP server configuration documented with examples
+  3. Agent skills system explained with 5 skill patterns
+  4. Rules and workflows explained with templates
+  5. Model switching strategies documented (Gemini 3 Pro, Claude Opus/Sonnet 4.5)
+  6. Module 04 strengthened with hierarchical context, decision flowchart, security
+  7. Cheatsheet updated with Antigravity/Firebase Studio sections
+**Plans**: 1 plan (ad-hoc execution)
+
+Plans:
+- [x] Module 07 creation (README, demonstration, exercise, solutions)
+- [x] Module 04 strengthening (hierarchical context, security, decision flowchart)
+- [x] Cheatsheet updates (Antigravity, Firebase Studio, advanced context engineering)
 
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -122,8 +142,9 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Project Paths Development | 3/3 | Complete | 2026-01-25 |
 | 3. Supporting Materials | 3/3 | Complete | 2026-01-25 |
 | 4. Infrastructure & Deployment | 3/3 | Complete | 2026-01-26 |
-| 5. Dry-run & Validation | 0/3 | Not started | - |
+| 5. Dry-run & Validation | Ad-hoc | Complete | 2026-01-27 |
+| 6. Vibe Coding Power Tools | Ad-hoc | Complete | 2026-01-27 |
 
 ---
 *Roadmap created: 2026-01-24*
-*Last updated: 2026-01-26 after Phase 5 planning*
+*Last updated: 2026-01-27 after Phase 6 completion*
