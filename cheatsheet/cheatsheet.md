@@ -378,6 +378,25 @@ onValue(playersRef, (snapshot) => {
 Run all tests and report results.
 ```
 
+### NotebookLM MCP - Zero Hallucination Research
+
+**Setup:**
+```bash
+claude mcp add notebooklm npx notebooklm-mcp@latest
+```
+
+**Usage:**
+```
+Research how to use structured output in Gemini. Check NotebookLM first.
+```
+
+**When to use:**
+| Scenario | Tool |
+|----------|------|
+| Official API docs | NotebookLM |
+| Current events | Web Search |
+| Specific library versions | NotebookLM |
+
 ### Firebase Studio Tips
 
 **Visual tools:**

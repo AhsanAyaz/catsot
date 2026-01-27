@@ -21,9 +21,10 @@ Term coined by **Andrej Karpathy** (OpenAI co-founder, former Tesla AI lead) in 
 
 **Today's demonstration:**
 
-We'll explore two powerful vibe coding environments:
+We'll explore powerful vibe coding environments and research tools:
 1. **Google Antigravity** - Agent-first IDE with autonomous execution
 2. **Firebase Studio** - Cloud-based prototyping with visual feedback
+3. **NotebookLM MCP** - Zero-hallucination research from your own documentation
 
 ---
 
@@ -178,7 +179,56 @@ my-skill/
 
 ---
 
-## Part B: Firebase Studio (3 minutes)
+## Part B: NotebookLM MCP - Zero Hallucination Research (2 minutes)
+
+### What is NotebookLM MCP?
+
+**The problem:** AI models sometimes hallucinate APIs, methods, or patterns that don't exist.
+
+**The solution:** NotebookLM MCP lets your AI agent query YOUR documentation directly:
+- Upload official docs to NotebookLM
+- Agent queries only your trusted sources
+- Answers are grounded with citations
+- No invented APIs or outdated information
+
+### Quick Demo (1 minute)
+
+**Action:** Show the workflow
+
+1. **Upload docs to NotebookLM:**
+   - Go to notebooklm.google.com
+   - Create notebook, upload Gemini API docs
+   - Share and copy link
+
+2. **Add to library:**
+   ```
+   Add https://notebooklm.google.com/notebook/abc123 to library tagged "gemini, api"
+   ```
+
+3. **Research before coding:**
+   ```
+   Research how to use structured output with Gemini. Check NotebookLM first.
+   ```
+
+**Point out:**
+> "Instead of the AI guessing or using outdated training data, it queries YOUR uploaded documentation. If the answer isn't in your docs, NotebookLM says 'I don't know' instead of hallucinating."
+
+### When to Use NotebookLM vs. Web Search
+
+| Scenario | Tool |
+|----------|------|
+| Official API documentation | NotebookLM |
+| Recent news, current events | Web Search (Grounding) |
+| Internal team documentation | NotebookLM |
+| General coding patterns | AI knowledge |
+| Specific library versions | NotebookLM |
+
+**Key insight:**
+> "NotebookLM is like having a research assistant who only gives you answers from documents you trust."
+
+---
+
+## Part C: Firebase Studio (3 minutes)
 
 ### Step 1: Two Development Modes (30 seconds)
 

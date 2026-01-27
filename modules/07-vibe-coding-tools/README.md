@@ -64,6 +64,13 @@ By the end of this module, you will be able to:
 - MCP server integration for external tools
 - Rules, workflows, and skills for customization
 
+### NotebookLM MCP
+- Zero-hallucination research from your own documentation
+- Upload official docs (APIs, frameworks, internal wikis)
+- AI queries only YOUR trusted sources
+- Grounded answers with citations
+- Eliminates invented APIs and outdated information
+
 ### Firebase Studio
 - Cloud-based development environment (formerly Project IDX)
 - App Prototyping Agent for natural language app building
