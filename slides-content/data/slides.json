@@ -1,14 +1,1 @@
-[
-  {"link": "00-welcome.md", "title": "Code at the Speed of Thought"},
-  {"link": "01-ai-studio.md", "title": "AI Studio: The API Playground"},
-  {"link": "02-notebooklm.md", "title": "NotebookLM: Research Partner"},
-  {"link": "03-antigravity.md", "title": "Antigravity: Agent-First Development"},
-  {"link": "04-gemini-cli.md", "title": "Gemini CLI: Terminal Power"},
-  {"link": "05-transition.md", "title": "Part 1 Complete / Coffee Break"},
-  {"link": "06-firebase-intro.md", "title": "Firebase Studio: Build & Deploy"},
-  {"link": "07-ai-centric-view.md", "title": "AI-Centric View Deep Dive"},
-  {"link": "08-pro-code-mode.md", "title": "Pro Code Mode"},
-  {"link": "09-firebase-services.md", "title": "Firebase Services Integration"},
-  {"link": "10-build-time.md", "title": "Build Time! Choose Your Path"},
-  {"link": "11-showcase.md", "title": "Workshop Showcase"}
-]
+[{"link":"00-welcome.md","title":"Code at the Speed of Thought"},{"link":"01-ai-studio.md","title":"AI Studio — The API Playground"},{"link":"02-notebooklm.md","title":"NotebookLM — Your Research Partner"},{"link":"03-antigravity.md","title":"Antigravity — Agent-First Development"},{"link":"04-gemini-cli.md","title":"Gemini CLI — Terminal Power"},{"link":"05-transition.md","title":"Part 1 Complete"},{"link":"06-firebase-intro.md","title":"Part 2: Firebase Studio"},{"link":"07-ai-centric-view.md","title":"AI-Centric View Deep Dive"},{"link":"08-pro-code-mode.md","title":"Pro Code Mode"},{"link":"09-firebase-services.md","title":"Firebase Services Integration"},{"link":"10-build-time.md","title":"Build Time"},{"link":"11-showcase.md","title":"Workshop Showcase"}]
