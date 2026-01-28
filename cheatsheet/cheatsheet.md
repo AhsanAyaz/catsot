@@ -536,7 +536,7 @@ const response = await ai.models.generateContent({
 - Module 03: Multimodal input, image analysis
 - Module 04: Context engineering, few-shot examples, system instructions
 - Module 05: Grounding with Google Search
-- Module 06: Logic engines, vibe coding patterns
+- Module 06: Logic engines (optional/advanced)
 - Module 07: Antigravity, Firebase Studio, MCP servers, agent skills
 
 **Quick Links by Project:**

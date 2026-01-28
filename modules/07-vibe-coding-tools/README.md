@@ -82,7 +82,7 @@ By the end of this module, you will be able to:
 
 📄 **Cheatsheet:** See "Vibe Coding Power Tools" section in cheatsheet/cheatsheet.md
 
-📊 **Slides:** Covered in slides/02-module-transitions.md (Module 06 → Part 2 transition)
+📊 **Workshop:** This module is part of the hands-on workshop. See instructor slides during live session.
 
 🔗 **Apply in Part 2:**
 - All project paths benefit from Antigravity/Firebase Studio workflows

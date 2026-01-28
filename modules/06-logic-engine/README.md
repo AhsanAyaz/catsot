@@ -1,5 +1,9 @@
 # Module 06: Logic Engine - Foundations for AI-Powered Rules
 
+> **Note:** This module is currently under review. The Logic Engine content may be integrated
+> into other modules or delivered as optional advanced material. Check with the instructor
+> for the latest workshop structure.
+
 **Duration:** 20 minutes
 
 ## Learning Objectives
@@ -87,7 +91,7 @@ This is the shared foundation that all Part 2 projects build upon, whether you c
 
 📄 **Cheatsheet:** See "Part 2 Essentials" in cheatsheet/cheatsheet.md
 
-📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+📊 **Workshop:** This module is part of the hands-on workshop. See instructor slides during live session.
 
 🔗 **Apply in Part 2:**
 - All Part 2 paths (logic engine foundation for game rules, state management)

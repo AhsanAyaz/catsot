@@ -66,7 +66,7 @@ Gemini uses that description to understand what to populate in that field. Witho
 
 📄 **Cheatsheet:** See "Common Tasks: JSON Structured Output" in cheatsheet/cheatsheet.md
 
-📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+📊 **Workshop:** This module is part of the hands-on workshop. See instructor slides during live session.
 
 🔗 **Apply in Part 2:**
 - part2/face-reactive/ (emotion JSON from blendshape detection)
