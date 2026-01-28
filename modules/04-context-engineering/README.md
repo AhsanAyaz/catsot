@@ -57,7 +57,7 @@ By the end of this module, you will be able to:
 
 📄 **Cheatsheet:** See "Common Tasks: Context Engineering (Few-Shot)" in cheatsheet/cheatsheet.md
 
-📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+📊 **Slides:** Covered in slides-content/content/01-ai-studio.md
 
 🔗 **Apply in Part 2:**
 - All Part 2 paths (prompt quality techniques for better AI results)

@@ -114,7 +114,7 @@ Expected: 20 minutes | Buffer: 3 minutes
 
 📄 **Cheatsheet:** See "Advanced: Grounding with Google Search" in cheatsheet/cheatsheet.md
 
-📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+📊 **Slides:** Covered in slides-content/content/01-ai-studio.md
 
 🔗 **Apply in Part 2:**
 - part2/camera-game/ (optional: grounding for trivia questions extension)

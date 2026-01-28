@@ -49,7 +49,7 @@ This hands-on experience builds the foundation for all subsequent modules. Every
 
 📄 **Cheatsheet:** See "Quick Start: Basic Gemini Prompt" in cheatsheet/cheatsheet.md
 
-📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+📊 **Slides:** Covered in slides-content/content/01-ai-studio.md
 
 🔗 **Apply in Part 2:**
 - Foundation for all Part 2 paths (basic API usage)
