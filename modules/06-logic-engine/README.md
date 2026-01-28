@@ -87,7 +87,7 @@ This is the shared foundation that all Part 2 projects build upon, whether you c
 
 📄 **Cheatsheet:** See "Part 2 Essentials" in cheatsheet/cheatsheet.md
 
-📊 **Slides:** Covered in slides/01-part1-intro.md and slides/02-module-transitions.md
+📊 **Slides:** Covered in slides-content/content/01-ai-studio.md
 
 🔗 **Apply in Part 2:**
 - All Part 2 paths (logic engine foundation for game rules, state management)
