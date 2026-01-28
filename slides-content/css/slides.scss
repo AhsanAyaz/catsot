@@ -76,3 +76,37 @@ img.meme {
   --r-main-font: 'Nunito', Helvetica, sans-serif;
   --r-heading-font: 'Nunito', Helvetica, sans-serif;
 }
+
+// // Scaled slides for dense content
+// .reveal section[data-scale="0.85"] {
+//   transform: scale(0.85);
+//   transform-origin: center center;
+// }
+
+// .reveal section[data-scale="0.7"] {
+//   transform: scale(0.7);
+//   transform-origin: center center;
+// }
+
+// .reveal section[data-scale="0.6"] {
+//   transform: scale(0.6);
+//   transform-origin: center center;
+// }
+
+// // Video styling
+// .reveal video.slide-video {
+//   max-width: 90%;
+//   max-height: 70vh;
+//   border-radius: 12px;
+//   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+// }
+
+// Smaller fonts for comparison tables
+.reveal .small-table {
+  font-size: 0.7em;
+}
+
+.reveal .small-table td,
+.reveal .small-table th {
+  padding: 0.3em 0.6em;
+}
