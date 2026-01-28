@@ -1,24 +1,16 @@
----
-marp: true
-theme: default
-paginate: true
-class: invert
----
-
-<!--
-Speaker Notes:
-- Part 1 is 2 hours total = ~20 min per module
-- Emphasize Option A/B paths for mixed skill levels
-- Mention "Going Further" sections for fast finishers
-- Time check after Module 3 (should be ~14:00)
--->
-
-# Part 1: Foundations
+# OLD: Part 1: Foundations
 
 **6 Progressive Modules**
 13:00 - 15:00 (2 hours)
 
 Building mental models for AI architecture
+
+Note:
+
+- Part 1 is 2 hours total = ~20 min per module
+- Emphasize Option A/B paths for mixed skill levels
+- Mention "Going Further" sections for fast finishers
+- Time check after Module 3 (should be ~14:00)
 
 ---
 
@@ -29,6 +21,7 @@ Text Input → JSON Output → Image Analysis → Context Engineering → Search
 ```
 
 Each module builds on the previous:
+
 1. Understand the basics
 2. Add structure
 3. Add multimodality
@@ -65,6 +58,7 @@ Each module follows same pattern:
 **solutions/** — Reference implementations
 
 **Option A/B paths** in exercises:
+
 - Option A: Guided, step-by-step
 - Option B: Independent exploration
 
@@ -98,6 +92,7 @@ console.log(response.text);
 See `/cheatsheet/cheatsheet.pdf` for quick API reference
 
 **Organized by task frequency:**
+
 - Quick Start (5 minutes to first prompt)
 - Common Tasks (structured output, images)
 - Advanced (grounding, function calling)
@@ -110,6 +105,7 @@ Keep it open during exercises for fast lookup.
 # Module 01: AI Studio Exploration
 
 **What you'll learn:**
+
 - AI Studio interface (aistudio.google.com)
 - Freeform prompt crafting
 - Model selection (Gemini 2.0 Flash, Pro)
@@ -122,16 +118,16 @@ Freeform prompts are powerful but unpredictable — sets baseline for structured
 
 **File:** `modules/01-ai-studio-exploration/exercise.md`
 
-<!--
+Note:
 Timing note: Module 01 should complete by ~13:20
 Check if participants are keeping pace
--->
 
 ---
 
 # Module 02: Structured Output
 
 **What you'll learn:**
+
 - JSON Schema creation
 - Enforcing structure with `responseMimeType`
 - Description fields as model instructions
@@ -163,6 +159,7 @@ const schema = {
 # Module 03: Multimodal Input
 
 **What you'll learn:**
+
 - Image analysis with Gemini Vision
 - Combining images + text prompts
 - File API vs inline data
@@ -187,12 +184,14 @@ const response = await ai.models.generateContent({
 # Module 04: Context Engineering
 
 **What you'll learn:**
+
 - 5-version prompt progression pattern
 - Few-shot learning (2-3 examples optimal)
 - XML tags for structured delimiters
 - Template patterns for reusable prompts
 
 **Progression:**
+
 1. Basic prompt (unstructured)
 2. Add system instructions
 3. Add XML tags for sections
@@ -209,6 +208,7 @@ Context engineering + structured output = production-ready
 # Module 05: Grounding with Google Search
 
 **What you'll learn:**
+
 - Grounding toggle in AI Studio
 - When to use grounding vs RAG
 - Metadata structure (grounding chunks, URLs)
@@ -229,6 +229,7 @@ Context engineering + structured output = production-ready
 # Module 06: Logic Engine
 
 **What you'll learn:**
+
 - Vibe coding workflow (describe → AI generates)
 - Pre-built logic engine pattern
 - Lambda functions for rules
@@ -250,16 +251,16 @@ const result = engine.evaluate(customerData, rules);
 
 **File:** `modules/06-logic-engine/exercise.md`
 
-<!--
+Note:
 Timing note: Module 06 should complete by ~14:50
 Coffee break at 15:00
--->
 
 ---
 
 # Between Modules: Quick Checks
 
 After each module, instructor will:
+
 1. Demonstrate key concept live
 2. Check common questions
 3. Show 1-2 interesting participant solutions
@@ -268,6 +269,7 @@ After each module, instructor will:
 **See:** `slides/02-module-transitions.md` for detailed bridges
 
 **Timing flexibility:**
+
 - Ahead of schedule? Explore "Going Further" sections
 - Behind schedule? Focus on core concepts, skip optional exercises
 
@@ -282,7 +284,3 @@ After each module, instructor will:
 **Goal:** Understand freeform prompts before adding structure
 
 Let's start.
-
----
-
-<!-- Next: slides/02-module-transitions.md for between-module bridges -->

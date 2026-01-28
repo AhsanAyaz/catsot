@@ -1,4 +1,4 @@
-# Transition: Module 01 → 02
+# OLD: Transition: Module 01 → 02
 
 **What you just learned:**
 Freeform prompts in AI Studio — powerful but unpredictable
@@ -17,6 +17,7 @@ You can't build reliable apps on unpredictable output
 Note:
 These slides bridge between modules
 Use them to:
+
 1. Reinforce what was just learned
 2. Preview next module's value
 3. Check timing (adjust pace if needed)
@@ -27,6 +28,7 @@ Use them to:
 # Module 01 → 02: Code Example
 
 **Before (Module 01):**
+
 ```javascript
 const response = await ai.models.generateContent({
   model: "gemini-flash-latest",
@@ -37,6 +39,7 @@ const response = await ai.models.generateContent({
 ```
 
 **After (Module 02):**
+
 ```javascript
 const response = await ai.models.generateContent({
   model: "gemini-flash-latest",
@@ -85,6 +88,7 @@ Real-world AI apps process multiple input types (photos, screenshots, charts)
 # Module 02 → 03: Code Example
 
 **Text-only (Module 02):**
+
 ```javascript
 await ai.models.generateContent({
   model: "gemini-flash-latest",
@@ -94,6 +98,7 @@ await ai.models.generateContent({
 ```
 
 **Text + Image (Module 03):**
+
 ```javascript
 await ai.models.generateContent({
   model: "gemini-flash-latest",
@@ -146,6 +151,7 @@ Better context = better results (garbage in, garbage out)
 # Module 03 → 04: Code Example
 
 **Simple prompt (Module 03):**
+
 ```javascript
 await ai.models.generateContent({
   model: "gemini-flash-latest",
@@ -155,6 +161,7 @@ await ai.models.generateContent({
 ```
 
 **Engineered prompt (Module 04):**
+
 ```javascript
 const prompt = `
 <context>You are a data analyst for a Swedish fintech company.</context>
@@ -210,6 +217,7 @@ AI models are trained on past data — grounding adds NOW
 # Module 04 → 05: Comparison
 
 **Without grounding:**
+
 ```javascript
 await ai.models.generateContent({
   model: "gemini-flash-latest",
@@ -219,6 +227,7 @@ await ai.models.generateContent({
 ```
 
 **With grounding:**
+
 ```javascript
 await ai.models.generateContent({
   model: "gemini-flash-latest",
@@ -230,6 +239,7 @@ await ai.models.generateContent({
 ```
 
 **When to use grounding:**
+
 - Current events, stock prices, sports scores
 - Public web information
 - Fact-checking against latest sources
@@ -273,6 +283,7 @@ This is the bridge between prompts and production apps
 # Module 05 → 06: Use Case
 
 **Grounding example (Module 05):**
+
 ```javascript
 // Query current stock price with grounding
 await ai.models.generateContent({
@@ -284,6 +295,7 @@ await ai.models.generateContent({
 ```
 
 **Logic engine example (Module 06):**
+
 ```javascript
 // Build reusable pricing rules using AI
 const rules = [
@@ -341,6 +353,7 @@ Part 2 — Choose your creative project path
 
 **Think about:**
 Which Part 2 project interests you?
+
 - Face-Reactive Visualization
 - Camera-Based Multiplayer Game
 - Custom Creative Project
@@ -349,6 +362,7 @@ See you in 30 minutes!
 
 Note:
 Coffee Break (15:00-15:30):
+
 - Remind participants to return by 15:30
 - Part 2 is 1.5 hours (15:30-17:00)
 - Three project paths to choose from

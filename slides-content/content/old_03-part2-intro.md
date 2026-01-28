@@ -1,4 +1,4 @@
-# Part 2: Build Your Project
+# OLD: Part 2: Build Your Project
 
 **Choose Your Creative Path**
 15:30 - 17:00 (1.5 hours)
@@ -6,6 +6,7 @@
 Apply foundations from Part 1 to real projects
 
 Note:
+
 - Part 2 is choose-your-own-path (1.5 hours)
 - Encourage choosing based on interest, not just difficulty
 - Remind: extension challenges exist (15-26 per path)
@@ -17,6 +18,7 @@ Note:
 # Part 2 Structure
 
 **Time Budget:**
+
 - Project setup: 5 minutes
 - Core implementation: 35 minutes (2-3 TODOs)
 - Polish and testing: 15 minutes
@@ -26,6 +28,7 @@ Note:
 **Total: 60-75 minutes** to working, deployed app
 
 **Choose based on:**
+
 - What interests you (not just difficulty)
 - What you want to learn
 - What you might build after workshop
@@ -41,6 +44,7 @@ Note:
 | **Custom Project** | Your own idea | Your choice | Advanced builders, specific goals |
 
 **All paths:**
+
 - Include starter templates (60-70% complete)
 - Have clear TODOs with time estimates
 - Provide extension challenges for fast finishers
@@ -75,15 +79,18 @@ based on collective mood. Use MediaPipe face detection + Canvas particles.
 # Face-Reactive: Technical Details
 
 **Tech stack:**
+
 - MediaPipe Face Landmarker (emotion detection)
 - Canvas 2D (particle rendering)
 - Blendshape mapping (6 emotions: happy, sad, surprised, angry, excited, calm)
 
 **Key concepts from Part 1:**
+
 - Multimodal input (Module 03) — camera video processing
 - Logic engine (Module 06) — emotion-to-visual mapping
 
 **Files:**
+
 - Starter: `part2/face-reactive/starter/README.md`
 - Reference: `part2/face-reactive/reference/` (complete implementation)
 - Extensions: `part2/face-reactive/EXTENSIONS.md` (20 challenges)
@@ -119,16 +126,19 @@ experiences with Firebase — from party games to training simulations.
 # Camera Game: Technical Details
 
 **Tech stack:**
+
 - html5-qrcode (QR scanning)
 - Firebase Realtime Database (multiplayer sync)
 - Camera API (browser permissions)
 
 **Key concepts from Part 1:**
+
 - Structured output (Module 02) — game state format
 - Multimodal input (Module 03) — camera access
 - Logic engine (Module 06) — game rules
 
 **Files:**
+
 - Starter: `part2/camera-game/starter/README.md`
 - Reference: `part2/camera-game/reference/` (speed clicker example)
 - Extensions: `part2/camera-game/EXTENSIONS.md` (26 challenges)
@@ -149,6 +159,7 @@ Blank canvas with architecture guidance — build what YOU want
 ✅ Zero TODOs in template — fully customizable
 
 **Your responsibility:**
+
 - Choose an idea (or create your own)
 - Plan implementation
 - Build using helpers + Part 1 concepts
@@ -170,6 +181,7 @@ Blank canvas with architecture guidance — build what YOU want
 | **AI Role** | Generation, Analysis, Logic | Affects which Gemini features to use |
 
 **Files:**
+
 - Template: `part2/custom-project/template/`
 - Guide: `part2/custom-project/ARCHITECTURE-GUIDE.md`
 - Examples: `part2/custom-project/EXAMPLES.md` (15 ideas, 35-65 min each)
@@ -181,16 +193,19 @@ Blank canvas with architecture guidance — build what YOU want
 # Decision Matrix: Which Path?
 
 **Choose Face-Reactive if:**
+
 - You enjoy visual creativity and animation
 - You want to work with MediaPipe (emotion detection)
 - You prefer guided TODOs over blank canvas
 
 **Choose Camera Game if:**
+
 - You're interested in multiplayer mechanics
 - You want to learn Firebase real-time sync
 - You enjoy game design and competitive experiences
 
 **Choose Custom Project if:**
+
 - You have a specific idea you want to build
 - You're comfortable with architectural decisions
 - You want maximum creative freedom
@@ -202,16 +217,19 @@ Blank canvas with architecture guidance — build what YOU want
 # Example Ideas (Custom Project)
 
 **Solo + Creative:**
+
 - Gesture-controlled music visualizer (45 min)
 - Emotion-based color palette generator (35 min)
 - Hand-pose drawing tool (50 min)
 
 **Multiplayer + Competitive:**
+
 - Reaction time battle (40 min)
 - Collaborative drawing canvas (55 min)
 - Emoji reaction voting (35 min)
 
 **AI-Driven:**
+
 - Real-time image style transfer (60 min)
 - Voice-to-visual mood board (65 min)
 - Context-aware notification system (50 min)
@@ -245,11 +263,13 @@ Blank canvas with architecture guidance — build what YOU want
 Each path includes 15-26 extension challenges at multiple difficulty levels
 
 **Face-Reactive:** 20 challenges
+
 - Beginner: Add sound effects based on emotion (10 min)
 - Intermediate: Implement emotion history graph (25 min)
 - Advanced: Three.js 3D particle system (45+ min)
 
 **Camera Game:** 26 challenges
+
 - Beginner: Add countdown timer (15 min)
 - Intermediate: Implement best-of-3 rounds (20 min)
 - Advanced: Add AI opponent using Gemini (45+ min)
@@ -268,6 +288,7 @@ Each path includes 15-26 extension challenges at multiple difficulty levels
 4. Get public URL: `your-project.web.app`
 
 **Result:**
+
 - Shareable link
 - Works on mobile
 - No server management
@@ -288,6 +309,7 @@ Each path includes 15-26 extension challenges at multiple difficulty levels
 4. Start building
 
 **Paths:**
+
 - Face-Reactive: `part2/face-reactive/starter/README.md`
 - Camera Game: `part2/camera-game/starter/README.md`
 - Custom Project: `part2/custom-project/ARCHITECTURE-GUIDE.md`
@@ -298,6 +320,7 @@ Let's build.
 
 Note:
 During Part 2:
+
 - Circulate to answer questions
 - Check if anyone is stuck (offer hints, not solutions)
 - At 16:30, remind participants to start wrapping up for deployment
@@ -305,6 +328,7 @@ During Part 2:
 - Identify 3-4 volunteers for showcase demos
 
 Time check:
+
 - 15:30: Start Part 2
 - 16:00: Check progress (should be mid-TODO completion)
 - 16:30: Remind about deployment

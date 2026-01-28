@@ -1,10 +1,11 @@
-# Workshop Showcase
+# OLD: Workshop Showcase
 
 **Time for demos!**
 
 Looking for 3-4 volunteers to show what you built
 
 **Format:**
+
 - 2 minutes per demo
 - Show deployed URL (live demo)
 - Share one interesting challenge you solved
@@ -13,6 +14,7 @@ Looking for 3-4 volunteers to show what you built
 Who wants to go first?
 
 Note:
+
 - Showcase format: 3-4 volunteer demos (2 min each)
 - Celebrate what was built (working code + deployed app)
 - Reinforce what was learned (mental models, not just code)
@@ -24,11 +26,13 @@ Note:
 # What You Built Today
 
 **Tangible outputs:**
+
 - ✅ Deployed app with public URL
 - ✅ Code you own (downloadable, shareable)
 - ✅ Working knowledge of Gemini API
 
 **Intangible outcomes:**
+
 - 🧠 Mental models for architecting AI experiences
 - 🔧 Practical patterns (context engineering, structured output)
 - 🚀 Confidence to build more AI apps
@@ -40,6 +44,7 @@ Note:
 # What You Learned
 
 **Part 1 Foundations:**
+
 1. ✅ Freeform prompts → Structured output
 2. ✅ Text-only → Multimodal (images + text)
 3. ✅ Simple prompts → Context engineering
@@ -72,11 +77,13 @@ Note:
 # Next Steps: Keep Building
 
 **Extension challenges:**
+
 - 15-26 challenges per project path (beginner → advanced)
 - `part2/*/EXTENSIONS.md` — try harder challenges
 - Build on what you started today
 
 **New projects:**
+
 - Combine concepts across modules
 - Use custom project path template for your ideas
 - Reference implementations in `part2/*/reference/`
@@ -88,11 +95,13 @@ Note:
 # Resources
 
 **Official documentation:**
+
 - Gemini API: [ai.google.dev/gemini-api/docs](https://ai.google.dev/gemini-api/docs)
 - AI Studio: [aistudio.google.com](https://aistudio.google.com)
 - Firebase: [firebase.google.com/docs](https://firebase.google.com/docs)
 
 **Workshop materials:**
+
 - All modules: `/modules/XX-name/`
 - All projects: `/part2/*/`
 - Cheatsheet: `/cheatsheet/cheatsheet.pdf`
@@ -104,17 +113,20 @@ Note:
 # Community
 
 **Share what you built:**
+
 - Deploy to Firebase → get public URL
 - Share on LinkedIn, Twitter, internal Google channels
 - Tag: #GeminiWorkshop #CodeAtSpeedOfThought
 
 **Connect with speaker:**
 Muhammad Ahsan Ayaz
+
 - GitHub: [github.com/AhsanAyaz](https://github.com/AhsanAyaz)
 - LinkedIn: [linkedin.com/in/ahsanayaz](https://linkedin.com/in/ahsanayaz)
 - Blog: [codewithahsan.dev](https://codewithahsan.dev)
 
 **Stockholm AI community:**
+
 - Keep building creative AI experiences
 - Share learnings with local tech community
 
@@ -127,6 +139,7 @@ Muhammad Ahsan Ayaz
 [QR code placeholder for workshop organizer to fill]
 
 **What we want to know:**
+
 - Which modules were most valuable?
 - Which concepts were unclear?
 - What would you add/remove?
@@ -141,11 +154,13 @@ Thank you!
 # Thank You
 
 **You shipped today:**
+
 - Working AI app
 - Deployed to production
 - Code you understand and own
 
 **You learned:**
+
 - Context engineering
 - Structured output
 - Multimodal AI
