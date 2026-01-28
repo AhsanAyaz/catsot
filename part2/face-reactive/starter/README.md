@@ -32,7 +32,7 @@ Build a real-time emotion-driven particle visualization using MediaPipe face det
 - Cheatsheet: "MediaPipe Face Detection" section
 - Cheatsheet: "Canvas 2D Particle System" section
 
-📊 **Slides:** Introduced in slides/03-part2-intro.md
+📊 **Slides:** Introduced in slides-content/content/10-build-time.md
 
 🎨 **Going Further:**
 - See EXTENSIONS.md for 20 challenges
