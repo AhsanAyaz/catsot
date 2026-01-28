@@ -2,6 +2,7 @@
 
 **Workshop:** Google Stockholm, January 28, 2026
 **Cheatsheet Version:** 1.0
+**Slides:** See slides-content/content/ for presentation materials
 
 ---
 
@@ -325,6 +326,8 @@ onValue(playersRef, (snapshot) => {
 ---
 
 ## 5. Vibe Coding Power Tools — Antigravity & Firebase Studio
+
+**Covered in:** Module 07 | **Slides:** slides-content/content/03-antigravity.md, 06-firebase-intro.md
 
 ### Google Antigravity Basics
 

@@ -28,7 +28,7 @@ A multiplayer game where players:
 - Cheatsheet: "Firebase Realtime Database" section
 - Cheatsheet: "Troubleshooting: Camera permission denied"
 
-📊 **Slides:** Introduced in slides/03-part2-intro.md
+📊 **Slides:** Introduced in slides-content/content/10-build-time.md
 
 🎮 **Going Further:**
 - See EXTENSIONS.md for 26 challenges
